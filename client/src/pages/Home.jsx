@@ -14,8 +14,8 @@ export const Home = () => {
               tailored to meet your unique needs.
             </p>
             <div className="btn btn-group">
-              <a href="/contact"><div className="btn">connect now</div></a>
-              <a href="/services"><div className="btn">learn more</div></a>
+              <a href="/contact"><button className="btn">connect now</button></a>
+              <a href="/services"><button className="btn">learn more</button></a>
             </div>
           </div>
           {/* hero images  */}

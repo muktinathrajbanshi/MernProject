@@ -15,11 +15,3 @@ ul {
   gap: 3.2rem;
   font-size: 1.8rem;
 }
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
