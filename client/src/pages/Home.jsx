@@ -52,6 +52,35 @@ export const Home = () => {
           </div>
         </div>
      </section>
+
+     {/* 3rd section  */}
+      <section className="section-hero">
+        <div className="container grid grid-two-cols">
+                  {/* hero images  */}
+          <div className="hero-image">
+            <img 
+            src="/images/hero.svg" 
+            alt="hero section img" 
+            width="400"
+            height="500"
+             />
+          </div>
+          <div className="hero-content">
+            <p>We are here to help you</p>
+            <h1>Get Started Today</h1>
+            <p>
+              Ready to take the first step towards a more efficient and secure
+              IT infrastructure? Contact us today for a free consultation and 
+              let's discuss how Muktinath Tech can help your business thrive in 
+              the digital age.
+            </p>
+            <div className="btn btn-group">
+              <a href="/contact"><button className="btn">connect now</button></a>
+              <a href="/services"><button className="btn secondary-btn">learn more</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
 );
 };
