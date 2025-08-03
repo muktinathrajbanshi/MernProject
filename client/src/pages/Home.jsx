@@ -81,6 +81,13 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
+       {/* footer section start  */}
+        <footer>
+            <div className="footer-section">
+                <p>@muktinathtech 2025</p>
+            </div>
+        </footer>
     </>
 );
 };

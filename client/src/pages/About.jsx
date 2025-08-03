@@ -34,7 +34,7 @@ export const About = () => {
             {/* hero images  */}
             <div className="hero-image">
                 <img 
-                src="/images/design.svg" 
+                src="/images/aboutus.svg" 
                 alt="hero section img" 
                 width="400"
                 height="500"
@@ -42,6 +42,12 @@ export const About = () => {
             </div>
         </div>
       </section>
+      {/* footer section start  */}
+        <footer>
+            <div className="footer-section">
+                <p>@muktinathtech 2025</p>
+            </div>
+        </footer>
         </>
     );
 };

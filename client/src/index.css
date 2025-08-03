@@ -164,3 +164,15 @@ a.active {
 }
 
 /***** End analytics Section *****/
+
+/***** Footer Section *****/
+
+.footer-section {
+  width: 100%;
+  height: auto;
+  padding: 2rem 4rem;
+  text-align: center;
+  background-color: var(--btn-color);
+}
+
+/***** Footer End Section *****/
