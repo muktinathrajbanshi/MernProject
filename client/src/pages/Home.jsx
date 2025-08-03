@@ -59,7 +59,7 @@ export const Home = () => {
                   {/* hero images  */}
           <div className="hero-image">
             <img 
-            src="/images/hero.svg" 
+            src="/images/design.svg" 
             alt="hero section img" 
             width="400"
             height="500"
