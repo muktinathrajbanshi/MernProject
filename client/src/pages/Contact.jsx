@@ -37,8 +37,9 @@ export const Contact = () => {
                             name="message" 
                             id="message" 
                             cols="30" 
-                            rows="10"> 
-                            </textarea>
+                            autoComplete="off"
+                            rows="10"
+                            ></textarea>
                             </div>
                             <div>
                                 <button type="submit">submit</button>
