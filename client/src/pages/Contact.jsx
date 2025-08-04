@@ -1,4 +1,32 @@
+import { useState } from "react";
+
 export const Contact = () => {
+
+    const[contact, setContact] = useState({
+        username: "",
+        email: "",
+        message: "",
+    });
+
+    // lets tackle our handleInput 
+    const handleInput = (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+
+        setContact({
+            ... contact,
+            [name]: value,
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        console.log(contact);
+        
+    };
+
+
     return(
         <>
             <section className="section-contact">
@@ -12,13 +40,15 @@ export const Contact = () => {
                     </div>
                     {/* contact content  */}
                     <section className="section-form">
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="username">username</label>
                                 <input type="text" 
                                 name="username"
                                 id="username"
                                 autoComplete="off"
+                                value={contact.username}
+                                onChange={handleInput}
                                 required
                                 />
                             </div>
@@ -28,6 +58,8 @@ export const Contact = () => {
                                 name="email"
                                 id="email"
                                 autoComplete="off"
+                                value={contact.email}
+                                onChange={handleInput}
                                 required
                                 />
                             </div>
@@ -38,6 +70,9 @@ export const Contact = () => {
                             id="message" 
                             cols="30" 
                             autoComplete="off"
+                            value={contact.message}
+                            onChange={handleInput}
+                            required
                             rows="10"
                             ></textarea>
                             </div>
