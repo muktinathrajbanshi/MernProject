@@ -194,7 +194,7 @@ a.active {
   }
   & .contact-img {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 
     & img {
@@ -212,6 +212,10 @@ a.active {
     & label {
       display: block;
       margin-bottom: 1.2rem;
+      text-transform: capitalize;
+    }
+    & input,
+    textarea {
     }
   }
 }

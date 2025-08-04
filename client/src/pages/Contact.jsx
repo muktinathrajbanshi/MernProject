@@ -68,12 +68,12 @@ export const Contact = () => {
                             <textarea 
                             name="message" 
                             id="message" 
-                            cols="30" 
                             autoComplete="off"
                             value={contact.message}
                             onChange={handleInput}
                             required
-                            rows="10"
+                            cols="50" 
+                            rows="5"
                             ></textarea>
                             </div>
                             <div>
@@ -82,6 +82,16 @@ export const Contact = () => {
                         </form>
                     </section>
                 </div>
+                <section className="mb-3">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3068906628323!2d-74.01004671684753!3d40.71126016391745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fe30a7b447%3A0x8a0a55f0a5fd1f1f!2sPace%20University!5e0!3m2!1sen!2snp!4v1754324249014!5m2!1sen!2snp" 
+                    width="100%" 
+                    height="450" 
+                    allowFullScreen="" 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </section>
             </section>
         </>   
     );
