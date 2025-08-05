@@ -35,7 +35,7 @@ export const Register = () => {
             <main>
                 <div className="section-registration">
                     <div className="container grid grid-two-cols">
-                        <div className="registration-image">
+                        <div className="reg-img">
                             <img 
                             src="/images/registration.svg" 
                             alt="regtration img"
