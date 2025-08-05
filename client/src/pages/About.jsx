@@ -1,6 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 export const About = () => {
     return (
         <>
+        <main>
           <section className="section-hero">
             <div className="container grid grid-two-cols">
                     
@@ -27,8 +30,12 @@ export const About = () => {
                     is reliable and available 24/7.
                 </p>
                 <div className="btn btn-group">
-                <a href="/contact"><button className="btn">connect now</button></a>
-                <a href="/services"><button className="btn secondary-btn">learn more</button></a>
+                <NavLink to="/contact">
+                <button className="btn">connect now</button>
+                </NavLink>
+                <NavLink to="/services">
+                <button className="btn secondary-btn">learn more</button>
+                </NavLink>
                 </div>
             </div>
             {/* hero images  */}
@@ -71,6 +78,7 @@ export const About = () => {
                 <p>@muktinathtech 2025</p>
             </div>
         </footer>
+        </main>
         </>
     );
 };
