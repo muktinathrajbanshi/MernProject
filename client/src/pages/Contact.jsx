@@ -92,6 +92,12 @@ export const Contact = () => {
                     referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
                 </section>
+                {/* footer section start  */}
+                <footer>
+                    <div className="footer-section">
+                        <p>@muktinathtech 2025</p>
+                    </div>
+                </footer>
             </section>
         </>   
     );
