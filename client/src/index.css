@@ -338,8 +338,12 @@ a.active {
       text-transform: capitalize;
     }
     & input {
-      width: 80%;
+      width: 90%;
       padding: 0.6rem 0.6rem;
+    }
+
+    & button {
+      margin-top: 1rem;
     }
   }
 }

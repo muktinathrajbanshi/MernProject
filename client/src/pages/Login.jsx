@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Footer } from "../components/footer";
 
 export const Login = () => {
 
@@ -79,6 +80,8 @@ export const Login = () => {
                 </div>
             </main>
         </section>
+        {/* footer section start  */}
+        <Footer />
         </>
     );
 };

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Analytics } from "../components/Analytics";
+import { Footer } from "../components/footer";
 
 export const About = () => {
     return (
@@ -55,11 +56,7 @@ export const About = () => {
         <Analytics />
 
       {/* footer section start  */}
-        <footer>
-            <div className="footer-section">
-                <p>@muktinathtech 2025</p>
-            </div>
-        </footer>
+        <Footer />
         </main>
         </>
     );

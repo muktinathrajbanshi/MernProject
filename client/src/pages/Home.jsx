@@ -1,4 +1,5 @@
 import { Analytics } from "../components/Analytics";
+import { Footer } from "../components/footer";
 
 export const Home = () => {
   return(
@@ -64,13 +65,8 @@ export const Home = () => {
           </div>
         </div>
       </section>
-
-       {/* footer section start  */}
-        <footer>
-            <div className="footer-section">
-                <p>@muktinathtech 2025</p>
-            </div>
-        </footer>
+        {/* footer section start  */}
+        <Footer />
     </>
 );
 };

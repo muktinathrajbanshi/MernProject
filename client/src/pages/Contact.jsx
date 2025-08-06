@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Footer } from "../components/footer";
 
 export const Contact = () => {
 
@@ -93,11 +94,7 @@ export const Contact = () => {
                     ></iframe>
                 </section>
                 {/* footer section start  */}
-                <footer>
-                    <div className="footer-section">
-                        <p>@muktinathtech 2025</p>
-                    </div>
-                </footer>
+               <Footer />
             </section>
         </>   
     );

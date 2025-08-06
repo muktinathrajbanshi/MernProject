@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { Footer } from "../components/footer";
 
 export const Error = () => {
     return (
@@ -18,6 +19,7 @@ export const Error = () => {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     );
 };

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Footer } from "../components/footer";
 
 export const Register = () => {
 
@@ -109,6 +110,8 @@ export const Register = () => {
                 </div>
             </main>
         </section>
+        {/* footer section start  */}
+        <Footer />
         </>
     );
    };
