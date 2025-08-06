@@ -349,6 +349,10 @@ ul {
     }
   }
   & .registration-form {
+    & .main-heading {
+      text-transform: capitalize;
+    }
+
     & label {
       display: block;
       margin: 2.4rem 0 0.8rem 0;

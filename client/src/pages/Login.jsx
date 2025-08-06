@@ -41,7 +41,7 @@ export const Login = () => {
                         </div>
                         {/* let's tackle registration form  */}
                         <div className="registration-form">
-                            <h1 className="main-heading mb-3">registration form</h1>
+                            <h1 className="main-heading mb-3">login form</h1>
                             <br />
 
                             <form onSubmit={handleSubmit}>
@@ -73,15 +73,13 @@ export const Login = () => {
                                     />
                                 </div>
                                 <br />
-                                <button type="submit" className="btn btn-submit">Register Now</button>
+                                <button type="submit" className="btn btn-submit">Submit Now</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </main>
         </section>
-        {/* footer section start  */}
-        <Footer />
         </>
     );
 };

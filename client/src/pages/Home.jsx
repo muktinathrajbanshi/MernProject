@@ -65,8 +65,6 @@ export const Home = () => {
           </div>
         </div>
       </section>
-        {/* footer section start  */}
-        <Footer />
     </>
 );
 };

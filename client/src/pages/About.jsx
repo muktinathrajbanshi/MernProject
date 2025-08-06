@@ -54,9 +54,6 @@ export const About = () => {
 
          {/* 2nd section  */}
         <Analytics />
-
-      {/* footer section start  */}
-        <Footer />
         </main>
         </>
     );

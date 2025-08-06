@@ -110,8 +110,6 @@ export const Register = () => {
                 </div>
             </main>
         </section>
-        {/* footer section start  */}
-        <Footer />
         </>
     );
    };
