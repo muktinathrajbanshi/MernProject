@@ -51,6 +51,8 @@ li {
 
 /* layout rule  */
 .container {
+  display: flex;
+  justify-content: space-between;
   max-width: 140rem;
   padding: 4rem 2.4rem;
   margin: 0 auto;
@@ -107,6 +109,21 @@ a:hover,
 a.active {
   color: #535bf2;
 }
+
+/***** Navbar Section Start *****/
+
+.logo-brand {
+  font-size: 2.6rem;
+  font-weight: bolder;
+}
+
+ul {
+  display: flex;
+  gap: 3.2rem;
+  font-size: 1.8rem;
+}
+
+/***** Navbar Section End *****/
 
 /***** Hero Section *****/
 
@@ -349,3 +366,48 @@ a.active {
 }
 
 /***** Ragister Section End *****/
+
+/***** media query sections start *****/
+
+@media (width <= 998px) {
+  .grid-two-cols {
+    grid-template-columns: 1fr;
+  }
+  .section-services {
+    & .grid-three-cols {
+      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    }
+  }
+
+  .section-registration {
+    & .container {
+      & .reg-img img {
+        width: 60%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (width <= 798px) {
+  html {
+    font-size: 56.25%;
+  }
+  .section-registration {
+    & .container {
+      & .reg-img img {
+        width: 50%;
+        height: auto;
+      }
+    }
+
+    & .registration-form {
+      & input {
+        width: 100%;
+        padding: 0.6rem 0.6rem;
+      }
+    }
+  }
+}
+
+/***** media query section End *****/
