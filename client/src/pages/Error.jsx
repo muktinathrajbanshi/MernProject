@@ -19,7 +19,6 @@ export const Error = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
         </>
     );
 };

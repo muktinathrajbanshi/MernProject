@@ -23,11 +23,23 @@ export const Register = () => {
         };
 
         // handling the form submission 
-        const handleSubmit = (e) => {
+        const handleSubmit = async (e) => {
             e.preventDefault();
             console.log(user);
-            
-            alert(user);
+            try {
+                const response = await fetch(`http://localhost:5000/api/auth/register`, {
+                    method:"POST",
+                    headers: {
+                        "Content-Type": "application/json",   
+                    },
+                    body: JSON.stringify(user),
+                });
+
+                console.log(response);
+             } catch (error) {
+                console.log("register ", error); 
+            }
+           
         };
 
     return (
