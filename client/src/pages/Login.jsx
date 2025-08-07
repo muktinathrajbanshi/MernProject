@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Footer } from "../components/footer";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../store/auth";
 
 const URL = "http://localhost:5000/api/auth/login";
 
@@ -24,6 +25,8 @@ export const Login = () => {
     };
 
     const navigate = useNavigate();
+    
+    const storeTokenInLS = useAuth();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -41,6 +44,8 @@ export const Login = () => {
 
             if (response.ok) {
                 alert("Login Successful");
+                 const res_data = await response.json();
+                 storeTokenInLS(res_data.token); 
                 setUser({
                     email:"",
                     password:"",
