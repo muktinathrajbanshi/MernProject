@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { Footer } from "../components/footer";
+import { useNavigate } from "react-router-dom";
 
 export const Register = () => {
 
         const [user, setUser] = useState({
-            username:"muktinath",
+            username:"",
             email:"",
             phone:"",
             password: "",
         });
+
+        const navigate = useNavigate();
 
         // handling the input values 
         const handleInput = (e) => {
@@ -35,6 +38,15 @@ export const Register = () => {
                     body: JSON.stringify(user),
                 });
 
+                if (response.ok) {
+                    setUser({
+                        username:"",
+                        email:"",
+                        phone:"",
+                        password: "",
+                        });
+                        navigate("/login");
+                }
                 console.log(response);
              } catch (error) {
                 console.log("register ", error); 
