@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Footer } from "../components/footer";
+import { useNavigate } from "react-router-dom";
+
+const URL = "http://localhost:5000/api/auth/login";
 
 export const Login = () => {
 
@@ -20,9 +23,39 @@ export const Login = () => {
 
     };
 
-    const handleSubmit = (e) => {
+    const navigate = useNavigate();
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(user); 
+        try {
+            const response = await fetch(URL, {
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json",
+                },
+                body:JSON.stringify(user),
+            });
+
+            console.log("login form", response);
+            
+
+            if (response.ok) {
+                alert("Login Successful");
+                setUser({
+                    email:"",
+                    password:"",
+                });
+                navigate("/");
+            } else {
+                alert("invalid credentials");
+                console.log("invalid credentials");
+                
+            }
+        } catch (error) {
+            console.log(error);
+            
+        } 
+
     };
 
     return (
@@ -62,7 +95,7 @@ export const Login = () => {
                                  <div>
                                     <label htmlFor="password">password</label>
                                     <input 
-                                    type="text" 
+                                    type="password" 
                                     name="password" 
                                     placeholder="password"
                                     id="password"
@@ -73,7 +106,7 @@ export const Login = () => {
                                     />
                                 </div>
                                 <br />
-                                <button type="submit" className="btn btn-submit">Submit Now</button>
+                                <button type="submit" className="btn btn-submit">Login Now</button>
                             </form>
                         </div>
                     </div>
