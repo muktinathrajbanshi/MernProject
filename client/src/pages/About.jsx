@@ -10,7 +10,7 @@ export const About = () => {
             <div className="container grid grid-two-cols">
                     
             <div className="hero-content">
-                <p>Welcome, Muktinath Tech</p>
+                <p>hi username</p>
                 <h1>Why Choose Us?</h1>
                 <p>
                     Expertise: Our team consists of experienced IT professionals who are passionate about
