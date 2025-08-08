@@ -26,7 +26,7 @@ export const Login = () => {
 
     const navigate = useNavigate();
     
-    const storeTokenInLS = useAuth();
+    const {storeTokenInLS} = useAuth();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
