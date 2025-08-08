@@ -1,8 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { Analytics } from "../components/Analytics";
-import { Footer } from "../components/footer";
+import { useAuth } from "../store/auth";
 
 export const About = () => {
+
+
+    const { user } = useAuth();
+
+
     return (
         <>
         <main>
@@ -10,7 +15,7 @@ export const About = () => {
             <div className="container grid grid-two-cols">
                     
             <div className="hero-content">
-                <p>hi username</p>
+                <p className="hero-content-userdata">Welcome , { user ? ` ${user.username} to our website` : ` to our website`} </p>
                 <h1>Why Choose Us?</h1>
                 <p>
                     Expertise: Our team consists of experienced IT professionals who are passionate about
