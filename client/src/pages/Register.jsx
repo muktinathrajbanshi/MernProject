@@ -42,9 +42,12 @@ export const Register = () => {
                     body: JSON.stringify(user),
                 });
 
+               
+                const res_data = await response.json();
+                console.log("res from server", res_data.extraDetails);
+
                 if (response.ok) {
-                    const res_data = await response.json();
-                    console.log("res from server", res_data);
+                    
                     // stored the token in localhost 
                     storeTokenInLS(res_data.token); 
                     
@@ -55,8 +58,9 @@ export const Register = () => {
                         password: "",
                         });
                         navigate("/login");
-                }
-                console.log(response);
+                }else {
+                  alert(res_data.extraDetails ? res_data.extraDetails : res_data.message);
+                  }
              } catch (error) {
                 console.log("register ", error); 
             }

@@ -42,17 +42,18 @@ export const Login = () => {
             console.log("login form", response);
             
 
+            const res_data = await response.json();
+
             if (response.ok) {
                 alert("Login Successful");
-                 const res_data = await response.json();
-                 storeTokenInLS(res_data.token); 
+                storeTokenInLS(res_data.token); 
                 setUser({
                     email:"",
                     password:"",
                 });
                 navigate("/");
             } else {
-                alert("invalid credentials");
+                alert(res_data.extraDetails ? res_data.extraDetails : res_data.message);
                 console.log("invalid credentials");
                 
             }
