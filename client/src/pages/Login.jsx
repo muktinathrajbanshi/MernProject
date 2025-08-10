@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Footer } from "../components/footer";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
+import { toast } from "react-toastify";
 
 const URL = "http://localhost:5000/api/auth/login";
 
@@ -45,15 +46,16 @@ export const Login = () => {
             const res_data = await response.json();
 
             if (response.ok) {
-                alert("Login Successful");
+                // alert("Login Successful");
                 storeTokenInLS(res_data.token); 
                 setUser({
                     email:"",
                     password:"",
                 });
+                toast.success("Login successful");
                 navigate("/");
             } else {
-                alert(res_data.extraDetails ? res_data.extraDetails : res_data.message);
+                toast.error(res_data.extraDetails ? res_data.extraDetails : res_data.message);
                 console.log("invalid credentials");
                 
             }
