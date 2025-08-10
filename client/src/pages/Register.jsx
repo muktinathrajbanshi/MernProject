@@ -58,7 +58,7 @@ export const Register = () => {
                         password: "",
                         });
                         toast.success("Registration successful");
-                        navigate("/login");
+                        navigate("/");
                 }else {
                   toast.error(res_data.extraDetails ? res_data.extraDetails : res_data.message);
                   }
