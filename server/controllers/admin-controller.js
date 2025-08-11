@@ -13,9 +13,22 @@ const getAllUsers = async (req, res) => {
         }
         res.status(200).json(users);
     } catch (error) {
-        next(error)
+        next(error);
     }
 };
+
+// single user Logic 
+
+const getUserById = async (req, res) => {
+    try {
+        const id = req.params.id;
+        const data = await User.findOne({ _id: id }, { password: 0 });
+        return res.status(200).json(data);
+    } catch (error) {
+        next(error);
+    }
+};
+
 
 // user delete Logic 
 
@@ -45,4 +58,4 @@ const getAllContacts = async (req, res) => {
     }
 };
 
-module.exports = { getAllUsers, getAllContacts, deleteUserById };
+module.exports = { getAllUsers, getAllContacts, deleteUserById, getUserById };
