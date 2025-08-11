@@ -390,6 +390,116 @@ ul {
 
 /***** Ragister Section End *****/
 
+thead {
+  border-bottom: 3.5px solid grey;
+  color: #000;
+  /* margin-bottom: 10px; */
+}
+
+th {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  padding: 2.5rem;
+}
+
+td {
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  padding: 3rem;
+  text-align: center;
+  color: #000;
+  width: 30rem;
+}
+
+table {
+  background: #ecf0f1;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+  border-collapse: collapse;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.admin-contacts-section {
+  padding: 2rem;
+}
+
+.admin-contacts-section tr {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(10rem, 1fr));
+  align-items: center;
+  box-shadow: 0 0.3rem 0 grey;
+  margin-bottom: 10px;
+  border-bottom: 4px solid transparent;
+  color: #000;
+}
+
+body tr {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(10rem, 1fr));
+  align-items: center;
+  box-shadow: 0 0.3rem 0 grey;
+  margin-bottom: 10px;
+  border-bottom: 4px solid transparent;
+  color: black;
+
+  &:last-child {
+    box-shadow: none;
+  }
+}
+
+.updateLink {
+  background: #cff6dd;
+  color: #1fa750;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  padding: 1rem 4rem;
+
+  &:hover {
+    color: #cff6dd;
+    background: #1fa750;
+    font-weight: bold;
+  }
+}
+
+.admin-section-form {
+  background-color: var(--btn-color);
+  max-width: 60rem;
+  padding: 0 10rem;
+  color: violet;
+  margin-left: 10rem;
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem;
+
+    & div {
+      display: grid;
+
+      & input {
+        background-color: var(--helper-color);
+        border: none;
+        padding: 1.4rem 0rem 1.4rem 2rem;
+        color: var(--btn-color);
+      }
+
+      & input,
+      button {
+        max-width: 30rem;
+      }
+    }
+  }
+}
+
 /***** media query sections start *****/
 
 @media (width <= 998px) {
