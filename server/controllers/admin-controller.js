@@ -29,6 +29,24 @@ const getUserById = async (req, res) => {
     }
 };
 
+// user update Logic 
+
+const updateUserById = async (req, res) => {
+    try {
+        const id = req.params.id;
+        const updatedUserData = req.body;
+
+        const updateData = await User.updateOne({ _id: id }, {
+            $set: updatedUserData,
+        });
+
+        return res.status(200).json(updateData);
+        
+    } catch (error) {
+        next(error);
+    }
+};
+
 
 // user delete Logic 
 
@@ -58,4 +76,4 @@ const getAllContacts = async (req, res) => {
     }
 };
 
-module.exports = { getAllUsers, getAllContacts, deleteUserById, getUserById };
+module.exports = { getAllUsers, getAllContacts, deleteUserById, getUserById, updateUserById };
