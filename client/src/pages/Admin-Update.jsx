@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useAuth } from "../store/auth";
+import { toast } from "react-toastify";
 
 export const AdminUpdate = () => {
 
@@ -11,7 +12,7 @@ const [data, setData] = useState({
 });
 
     const params = useParams();
-    console.log("params single user: ", params);
+    // console.log("params single user: ", params);
     
     const { authorizationToken } = useAuth();
 
@@ -44,7 +45,44 @@ const [data, setData] = useState({
         getSingleUserData();
     }, []);
 
-    const handleInput = () => {};
+    const handleInput = (e) => {
+        let name = e.target.name;
+        let value = e.target.value;
+
+        setData({
+            ...data,
+            [name]: value,
+        });
+    };
+
+    // to update the data dynamically 
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch(
+                `http://localhost:5000/api/admin/users/update/${params.id}`, 
+                {
+                    method: "PATCH",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization: authorizationToken,
+                    },
+                    body: JSON.stringify(data),
+                }
+           );
+           if(response.ok) {
+               toast.success("Updated successfully");
+           } else {
+            toast.error("Not Updated");
+           }
+
+        } catch (error) {
+            console.log(error);
+            
+        }
+    };
 
     return (
         <>
@@ -57,7 +95,7 @@ const [data, setData] = useState({
                     
                     {/* contact content  */}
                     <section className="section-form">
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="username">username</label>
                                 <input type="text" 
