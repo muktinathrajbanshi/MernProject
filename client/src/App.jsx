@@ -8,7 +8,7 @@ import { Register } from "./pages/Register";
 import { Login } from "./pages/Login";
 import { Navbar } from "./components/Navbar";
 import { Error } from "./pages/Error";
-import { Footer } from "./components/footer";
+import { Footer } from "./components/Footer";
 import { Logout } from "./pages/Logout";
 import { AdminLayout } from "./components/layouts/Admin-Layout";
 import { AdminUsers } from "./pages/Admin-Users";
