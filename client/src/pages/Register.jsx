@@ -14,8 +14,9 @@ export const Register = () => {
 
 
         const navigate = useNavigate();
-        
-        const { storeTokenInLS } = useAuth();
+        const { storeTokenInLS, API } = useAuth();
+
+        const URL = `${API}/api/auth/register`;
         
         // handling the input values 
         const handleInput = (e) => {
@@ -34,7 +35,7 @@ export const Register = () => {
             e.preventDefault();
             console.log(user);
             try {
-                const response = await fetch(`http://localhost:5000/api/auth/register`, {
+                const response = await fetch(URL, {
                     method:"POST",
                     headers: {
                         "Content-Type": "application/json",   

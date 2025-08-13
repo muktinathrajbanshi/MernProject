@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 
-const URL = "http://localhost:5000/api/auth/login";
 
 export const Login = () => {
 
@@ -27,7 +26,9 @@ export const Login = () => {
 
     const navigate = useNavigate();
     
-    const {storeTokenInLS} = useAuth();
+    const {storeTokenInLS, API} = useAuth();
+
+    const URL = `${API}/api/auth/login`;
 
     const handleSubmit = async (e) => {
         e.preventDefault();
