@@ -1,5 +1,4 @@
 import { Analytics } from "../components/Analytics";
-import { Footer } from "../components/footer";
 
 export const Home = () => {
   return(
