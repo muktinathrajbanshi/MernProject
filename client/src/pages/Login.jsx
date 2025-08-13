@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Footer } from "../components/footer";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
