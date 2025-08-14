@@ -29,8 +29,15 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions));
-
 app.use(express.json());
+
+
+app.get("/", (req, res) => {
+    res.json({
+        status: "ok",
+        message: "🚀 API is running successfully at api.muktinathrajbanshi.com"
+    });
+});
 
 
 // Mount the Router: To use the router in your main Express app, you can "mount" it at a 
