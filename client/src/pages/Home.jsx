@@ -1,69 +1,98 @@
-import { Analytics } from "../components/Analytics";
 
 export const Home = () => {
   return(
     <>
      <main>
-      <section className="section-hero">
-        <div className="container grid grid-two-cols">
-          <div className="hero-content">
-            <p>We are the World Best IT Company</p>
-            <h1>Welcome to Muktinath Tech</h1>
-            <p>
-              Are you ready to take your business to the next level with 
-              cutting-edge IT solutions? Look no further! At Muktinath Tech,
-              we specialize in providing innovative IT services and solutions
-              tailored to meet your unique needs.
+      <section className="section-hero section">
+        <div className="container grid grid-two-column">
+          <div className="section-hero-data">
+            <p className="hero-top-data">this is me</p>
+            <div className="hero-heading">muktinath tech</div>
+            <p className="hero-para">
+              I'm muktinath rajbanshi. A Full stack Developer, youtuber and freelancer. 
+              Empower your business with Muktinath Tech — delivering
+              innovative, tailor-made IT solutions to help you stay ahead in the digital era.
             </p>
-            <div className="btn btn-group">
-              <a href="/contact"><button className="btn">connect now</button></a>
-              <a href="/services"><button className="btn secondary-btn">learn more</button></a>
+            <div>
+              <a href="/contact"><button className="btn hireme-btn">connect now</button></a>
+              {/* <a href="/services"><button className="btn hireme-btn">learn more</button></a> */}
             </div>
           </div>
-          {/* hero images  */}
-          <div className="hero-image">
+          {/* hero section right side  */}
+          <div className="section-hero-image">
             <img 
-            src="/images/hero.svg" 
+            src="/images/heroimg.avif" 
             alt="hero section img" 
-            width="400"
-            height="500"
+            className="hero-img"
              />
           </div>
         </div>
       </section>
      </main>
 
-    {/* 2nd section  */}
-    <Analytics />
+    {/* Biodata Section Starts  */}
 
-     {/* 3rd section  */}
-      <section className="section-hero">
-        <div className="container grid grid-two-cols">
-                  {/* hero images  */}
-          <div className="hero-image">
-            <img 
-            src="/images/design.svg" 
-            alt="hero section img" 
-            width="400"
-            height="500"
-             />
-          </div>
-          <div className="hero-content">
-            <p>We are here to help you</p>
-            <h1>Get Started Today</h1>
-            <p>
-              Ready to take the first step towards a more efficient and secure
-              IT infrastructure? Contact us today for a free consultation and 
-              let's discuss how Muktinath Tech can help your business thrive in 
-              the digital age.
-            </p>
-            <div className="btn btn-group">
-              <a href="/contact"><button className="btn">connect now</button></a>
-              <a href="/services"><button className="btn secondary-btn">learn more</button></a>
+      <section className="section-biodata section">
+      <div className="container grid grid-two-column">
+        <div className="bio-image">
+          <img src="images/bioimg.avif" alt="my biodata image" />
+        </div>
+         {/* bio right side data  */}
+        <div className="bio-data">
+          <h2 className="common-heading">my bio-data</h2>
+          <p>
+            Hello, this is me muktinath rajbanshi. I am keen interested in
+            fullstack developer all over the world. I am youtuber, freelancer
+            and IT professionals in Nepal. I am serving lots of individuals
+            regarding websites design.
+          </p>
+          <br />
+          <p>
+            One of my favorite projects are listed in my X account. Please visit
+            that site you feel happy upon seeing that.
+          </p>
+          <div className="bio-data-stats">
+            <div className="bio-stats">
+              <h3>Design</h3>
+              <div className="bio-progress-bar">
+                <span>80%</span>
+              </div>
+            </div>
+            <div className="bio-stats">
+              <h3>HTML</h3>
+              <div className="bio-progress-bar bio-progress-2">
+                <span>99%</span>
+              </div>
+            </div>
+            <div className="bio-stats">
+              <h3>CSS</h3>
+              <div className="bio-progress-bar bio-progress-3">
+                <span>80%</span>
+              </div>
+            </div>
+            <div className="bio-stats">
+              <h3>JavaScript</h3>
+              <div className="bio-progress-bar bio-progress-4">
+                <span>60%</span>
+              </div>
+            </div>
+            <div className="bio-stats">
+              <h3>MERN</h3>
+              <div className="bio-progress-bar bio-progress-5">
+                <span>80%</span>
+              </div>
             </div>
           </div>
+          <div className="bio-data-btn">
+            <a href="https://docs.google.com/document/d/1xjLFCcBFBT116VXFl2Z-6Iiz1d6wfhclBGKdlpwGfQg/edit?tab=t.0"
+             className="btn"
+             download
+             target="_blank"
+             >Download CV</a>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
     </>
 );
 };

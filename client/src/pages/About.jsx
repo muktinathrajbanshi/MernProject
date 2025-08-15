@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { Analytics } from "../components/Analytics";
 import { useAuth } from "../store/auth";
 
 export const About = () => {
@@ -57,8 +56,6 @@ export const About = () => {
         </div>
       </section>
 
-         {/* 2nd section  */}
-        <Analytics />
         </main>
         </>
     );

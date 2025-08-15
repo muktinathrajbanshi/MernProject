@@ -1,34 +1,109 @@
 import { NavLink } from "react-router-dom";
-// import "./Navbar.css";
 import { useAuth } from "../store/auth";
+import { useState } from "react";
 import "../index.css";
 
-
 export const Navbar = () => {
-    const { isLoggedIn } = useAuth();
-   return (
-    <>
-        <header className="header">
-                <div className="logo-brand">
-                    <a href="/"><img src="/images/mylogo.avif" alt="my logo img" /></a>
-                </div>
+  const { isLoggedIn } = useAuth();
+  const [menuActive, setMenuActive] = useState(false);
 
-                <nav className="navbar">
-                    <ul>
-                        <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="/about">About</NavLink></li>
-                        <li><NavLink to="/service">Services</NavLink></li>
-                        <li><NavLink to="/contact">Contact</NavLink></li>
-                        {
-                            isLoggedIn ?  <li><NavLink to="/logout">Logout</NavLink></li>
-                         :  <>
-                               <li><NavLink to="/register">Register</NavLink></li>
-                               <li><NavLink to="/login">Login</NavLink></li>
-                            </>
-                        }
-                    </ul>
-                </nav>
-        </header>
-    </>
-   );
+  const toggleMenu = () => {
+    setMenuActive((prev) => !prev);
+  };
+
+  return (
+    <header className={`header ${menuActive ? "active" : ""}`}>
+      <NavLink to="/">
+        <img src="/images/mylogo.avif" alt="my logo img" className="logo" />
+      </NavLink>
+
+      <nav className="navbar">
+        <ul className="navbar-lists">
+          <li>
+            <NavLink
+              to="/"
+              className="navbar-link home-link"
+              onClick={() => setMenuActive(false)}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className="navbar-link about-link"
+              onClick={() => setMenuActive(false)}
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/service"
+              className="navbar-link service-link"
+              onClick={() => setMenuActive(false)}
+            >
+              Services
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/portfolio"
+              className="navbar-link portfolio-link"
+              onClick={() => setMenuActive(false)}
+            >
+              Portfolio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className="navbar-link contact-link"
+              onClick={() => setMenuActive(false)}
+            >
+              Contact
+            </NavLink>
+          </li>
+          {isLoggedIn ? (
+            <li>
+              <NavLink
+                to="/logout"
+                className="navbar-link logout-link"
+                onClick={() => setMenuActive(false)}
+              >
+                Logout
+              </NavLink>
+            </li>
+          ) : (
+            <>
+              <li>
+                <NavLink
+                  to="/register"
+                  className="navbar-link register-link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Register
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/login"
+                  className="navbar-link login-link"
+                  onClick={() => setMenuActive(false)}
+                >
+                  Login
+                </NavLink>
+              </li>
+            </>
+          )}
+        </ul>
+      </nav>
+
+      {/* Mobile menu button */}
+      <div className="mobile-navbar-btn" onClick={toggleMenu}>
+        <ion-icon name="menu-outline" className="mobile-nav-icon" />
+        <ion-icon name="close-outline" className="mobile-nav-icon" />
+      </div>
+    </header>
+  );
 };
