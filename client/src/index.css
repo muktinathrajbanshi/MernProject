@@ -126,13 +126,26 @@ a.active {
 
 /***** Navbar Section Start *****/
 
+.header {
+  padding: 0 4.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo-brand {
   font-size: 2.6rem;
   font-weight: bolder;
+
+  & img {
+    width: 20%;
+    height: auto;
+  }
 }
 
 ul {
   display: flex;
+  text-align: center;
   gap: 3.2rem;
   font-size: 1.8rem;
 }

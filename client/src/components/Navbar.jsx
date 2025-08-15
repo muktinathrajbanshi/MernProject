@@ -8,13 +8,12 @@ export const Navbar = () => {
     const { isLoggedIn } = useAuth();
    return (
     <>
-        <header>
-            <div className="container">
+        <header className="header">
                 <div className="logo-brand">
-                    <a href="/">MuktinathTech</a>
+                    <a href="/"><img src="/images/mylogo.avif" alt="my logo img" /></a>
                 </div>
 
-                <nav>
+                <nav className="navbar">
                     <ul>
                         <li><NavLink to="/">Home</NavLink></li>
                         <li><NavLink to="/about">About</NavLink></li>
@@ -29,7 +28,6 @@ export const Navbar = () => {
                         }
                     </ul>
                 </nav>
-             </div>
         </header>
     </>
    );
