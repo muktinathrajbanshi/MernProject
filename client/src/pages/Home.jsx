@@ -93,6 +93,99 @@ export const Home = () => {
         </div>
       </div>
     </section>
+
+     {/* Resume Section Start    */}
+
+    <div className="section section-resume">
+      <div className="container grid grid-two-column">
+         {/* resume left side   */}
+         <div className="resume-img">
+          <img 
+          src="images/lazy1.avif"
+          data-src="images/biodata.jpg"
+           alt="resume image" 
+           className="lazy-img"
+           loading="lazy" />
+         </div>
+
+          {/* resume right side   */}
+          <div className="resume-data">
+            <h2 className="common-heading">resume</h2>
+            <p className="resume-para">My Work Experience</p>
+            <div className="resume-data-subsection">
+              <div className="resume-data-left">
+                <h3>React Developer</h3>
+                <div className="grid grid-two-column">
+                  <p><ion-icon name="business-outline" /> Jooneli Inc,</p>
+                  <p><ion-icon name="location-outline" /> Kathmandu, Nepal</p>
+                </div>
+              </div>
+               <div className="resume-data-right">
+                <p className="resume-data-button">Fulltime</p>
+                 <span><ion-icon name="calendar-outline" /> November 2023 - Feb 2025</span>
+              </div> 
+            </div>
+
+            <div className="resume-data-subsection">
+              <div className="resume-data-left">
+                <h3>KCC EXHIBIT 2024</h3>
+                <div className="grid grid-two-column">
+                  <p><ion-icon name="business-outline" /> KCC.</p>
+                  <p><ion-icon name="location-outline" /> Putalisadak, KTM</p>
+                </div>
+              </div>
+               <div className="resume-data-right">
+                <p className="resume-data-button">Fulltime</p>
+                 <span><ion-icon name="calendar-outline" /> August 2024 - Aug 2024</span>
+              </div> 
+            </div>
+
+            <div className="resume-data-subsection">
+              <div className="resume-data-left">
+                <h3>UI/UX</h3>
+                <div className="grid grid-two-column">
+                  <p><ion-icon name="business-outline" /> Machnet</p>
+                  <p><ion-icon name="location-outline" /> Phurtiman, KTM</p>
+                </div>
+              </div>
+               <div className="resume-data-right">
+                <p className="resume-data-button">Fulltime</p>
+                 <span><ion-icon name="calendar-outline" /> December 2022 - Dec 2022</span>
+              </div> 
+            </div>
+
+            <p className="resume-para">Education</p>
+            <div className="resume-data-subsection">
+              <div className="resume-data-left">
+                <h3>Computer Science</h3>
+                <div className="grid grid-two-column">
+                  <p><ion-icon name="business-outline" /> GBM, College</p>
+                  <p><ion-icon name="location-outline" /> Jhapa, BTM</p>
+                </div>
+              </div>
+               <div className="resume-data-right">
+                <p className="resume-data-button">+2</p>
+                 <span><ion-icon name="calendar-outline" /> January 2016 - Jan 2018</span>
+              </div> 
+            </div>
+
+            <div className="resume-data-subsection">
+              <div className="resume-data-left">
+                <h3>BCA</h3>
+                <div className="grid grid-two-column">
+                  <p><ion-icon name="business-outline" /> KCC</p>
+                  <p><ion-icon name="location-outline" /> Putalisadak, KTM</p>
+                </div>
+              </div>
+               <div className="resume-data-right">
+                <p className="resume-data-button">Bachelor</p>
+                 <span><ion-icon name="calendar-outline" /> December 2020 - Dec 2024</span>
+              </div> 
+            </div>
+
+          </div>
+      </div>
+    </div>
     </>
 );
 };
