@@ -94,6 +94,28 @@ export const Home = () => {
       </div>
     </section>
 
+     {/* work counter section start  */}
+    <section className="section section-work-data">
+      <div className="container grid grid-four-column">
+        <div>
+          <h2 className="counter-numbers" data-number="2000">0+</h2>
+          <p>project completed</p>
+        </div>
+        <div>
+          <h2 className="counter-numbers" data-number="6000">0+</h2>
+          <p>Happy Clients</p>
+        </div>
+        <div>
+          <h2 className="counter-numbers" data-number="5000">0+</h2>
+          <p>cups of cofee</p>
+        </div>
+        <div>
+          <h2 className="counter-numbers" data-number="3000">0+</h2>
+          <p>real professionals</p>
+        </div>
+      </div>
+    </section>
+
      {/* Resume Section Start    */}
 
     <div className="section section-resume">
