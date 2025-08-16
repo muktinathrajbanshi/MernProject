@@ -63,69 +63,65 @@ export const Contact = () => {
 
     return(
         <>
-            <section className="section-contact">
-                <div className="contact-content container">
-                    <h1 className="main-heading">contact us</h1>
+            <section className="section section-contact">
+                <div className="container">
+                    <h2 className="common-heading">contact us</h2>
                 </div>
-                {/* contact page main  */}
-                <div className="container grid grid-two-cols">
-                    <div className="contact-img">
-                        <img src="/images/available.svg" alt="24/7 img" />
-                    </div>
-                    {/* contact content  */}
-                    <section className="section-form">
-                        <form onSubmit={handleSubmit}>
-                            <div>
-                                <label htmlFor="username">username</label>
-                                <input type="text" 
-                                name="username"
-                                id="username"
-                                autoComplete="off"
-                                value={contact.username}
-                                onChange={handleInput}
-                                required
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="email">email</label>
-                                <input type="email" 
-                                name="email"
-                                id="email"
-                                autoComplete="off"
-                                value={contact.email}
-                                onChange={handleInput}
-                                required
-                                />
-                            </div>
-                            <div>
-                            <label htmlFor="message">message</label>
-                            <textarea 
-                            name="message" 
-                            id="message" 
-                            autoComplete="off"
-                            value={contact.message}
-                            onChange={handleInput}
-                            required
-                            cols="50" 
-                            rows="5"
-                            ></textarea>
-                            </div>
-                            <div>
-                                <button type="submit">submit</button>
-                            </div>
-                        </form>
-                    </section>
-                </div>
-                <section className="mb-3">
-                    <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3068906628323!2d-74.01004671684753!3d40.71126016391745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fe30a7b447%3A0x8a0a55f0a5fd1f1f!2sPace%20University!5e0!3m2!1sen!2snp!4v1754324249014!5m2!1sen!2snp" 
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3070720014725!2d-74.00775072438424!3d40.71125617139376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fe30a7b447%3A0x8a0a55f0a5fd1f1f!2sPace%20University!5e0!3m2!1sen!2snp!4v1753250830337!5m2!1sen!2snp"
                     width="100%" 
-                    height="450" 
+                    height="350" 
+                    style={ {border:0} }
                     allowFullScreen="" 
                     loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                </section>
+                    referrerPolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                {/* contact page main  */}
+                <div className="section-contact-main contact-container">
+                            <form onSubmit={handleSubmit}>
+                              <div className="grid grid-two-column">
+                                <div>
+                                    <label htmlFor="username">username</label>
+                                    <input type="text" 
+                                    name="username"
+                                    id="username"
+                                    autoComplete="off"
+                                    value={contact.username}
+                                    onChange={handleInput}
+                                    required
+                                    />
+                                </div>
+                                <div>
+                                    <label htmlFor="email">email</label>
+                                    <input type="email" 
+                                    name="email"
+                                    id="email"
+                                    autoComplete="off"
+                                    value={contact.email}
+                                    onChange={handleInput}
+                                    required
+                                    />
+                                </div>
+                                <div>
+                                <label htmlFor="message">message</label>
+                                <textarea 
+                                name="message" 
+                                id="message" 
+                                autoComplete="off"
+                                value={contact.message}
+                                onChange={handleInput}
+                                required
+                                cols="30" 
+                                rows="10"
+                                ></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" className="btn">send message</button>
+                                </div>
+                              </div>
+                            </form>
+                </div>
             </section>
         </>   
     );
