@@ -80,9 +80,8 @@ export const Contact = () => {
                 {/* contact page main  */}
                 <div className="section-contact-main contact-container">
                             <form onSubmit={handleSubmit}>
-                              <div className="grid grid-two-column">
                                 <div>
-                                    <label htmlFor="username">username</label>
+                                    <label htmlFor="username">Username</label>
                                     <input type="text" 
                                     name="username"
                                     id="username"
@@ -93,7 +92,7 @@ export const Contact = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="email">email</label>
+                                    <label htmlFor="email">Email</label>
                                     <input type="email" 
                                     name="email"
                                     id="email"
@@ -104,11 +103,12 @@ export const Contact = () => {
                                     />
                                 </div>
                                 <div>
-                                <label htmlFor="message">message</label>
+                                <label htmlFor="message">Message</label>
                                 <textarea 
                                 name="message" 
                                 id="message" 
                                 autoComplete="off"
+                                placeholder="Write your message"
                                 value={contact.message}
                                 onChange={handleInput}
                                 required
@@ -119,7 +119,7 @@ export const Contact = () => {
                                 <div>
                                     <button type="submit" className="btn">send message</button>
                                 </div>
-                              </div>
+                              
                             </form>
                 </div>
             </section>
