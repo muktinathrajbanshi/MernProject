@@ -193,6 +193,200 @@ export const Home = () => {
       </div>
     </div>
 
+    {/* our testimonial/swiper section starts  */}
+
+     <section className="section section-testimonial">
+      <div className="container">
+        <h2 className="common-heading">Happy Client Works</h2>
+      </div>
+       Swiper
+      <div className="swiper mySwiper container">
+        <div className="swiper-wrapper">
+           section start  
+          <div className="swiper-slide">
+            <div className="swiper-client-msg">
+              <p>
+                "I’m extremely impressed with the website they built for my
+                company. It’s clean, functional, and user-friendly. Their team
+                delivered exactly what we needed—on time and with great
+                communication."
+              </p>
+            </div>
+            <div className="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/natalie portman.jpg" alt="client review" />
+              </figure>
+              <div className="client-data-details">
+                <p>natalie portman</p>
+                <p>entrepruner</p>
+              </div>
+            </div>
+          </div>
+           {/* section end    */}
+          <div className="swiper-slide">
+            <div className="swiper-client-msg">
+              <p>
+                "I’m extremely impressed with the website they built for my
+                company. It’s clean, functional, and user-friendly. Their team
+                delivered exactly what we needed—on time and with great
+                communication."
+              </p>
+            </div>
+            <div className="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/tom cruise.jpg" alt="client review" />
+              </figure>
+              <div className="client-data-details">
+                <p>tom cruise</p>
+                <p>entrepruner</p>
+              </div>
+            </div>
+          </div>
+           {/* section end    */}
+          <div className="swiper-slide">
+            <div className="swiper-client-msg">
+              <p>
+                "I’m extremely impressed with the website they built for my
+                company. It’s clean, functional, and user-friendly. Their team
+                delivered exactly what we needed—on time and with great
+                communication."
+              </p>
+            </div>
+            <div className="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/hero.jpg" alt="client review" />
+              </figure>
+              <div className="client-data-details">
+                <p>muktinath rajbanshi</p>
+                <p>entrepruner</p>
+              </div>
+            </div>
+          </div>
+           {/* section end    */}
+          <div className="swiper-slide">
+            <div className="swiper-client-msg">
+              <p>
+                "I’m extremely impressed with the website they built for my
+                company. It’s clean, functional, and user-friendly. Their team
+                delivered exactly what we needed—on time and with great
+                communication."
+              </p>
+            </div>
+            <div className="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/emma stone.jpg" alt="client review" />
+              </figure>
+              <div className="client-data-details">
+                <p>emma stone</p>
+                <p>entrepruner</p>
+              </div>
+            </div>
+          </div>
+           {/* section end    */}
+          <div className="swiper-slide">
+            <div className="swiper-client-msg">
+              <p>
+                "I’m extremely impressed with the website they built for my
+                company. It’s clean, functional, and user-friendly. Their team
+                delivered exactly what we needed—on time and with great
+                communication."
+              </p>
+            </div>
+            <div className="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/paulwalker.avif" alt="client review" />
+              </figure>
+              <div className="client-data-details">
+                <p>paul walker</p>
+                <p>entrepruner</p>
+              </div>
+            </div>
+          </div>
+           {/* section end    */}
+          <div className="swiper-slide">
+            <div className="swiper-client-msg">
+              <p>
+                "I’m extremely impressed with the website they built for my
+                company. It’s clean, functional, and user-friendly. Their team
+                delivered exactly what we needed—on time and with great
+                communication."
+              </p>
+            </div>
+            <div className="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/chris.jpg" alt="client review" />
+              </figure>
+              <div className="client-data-details">
+                <p>chris hemsworth</p>
+                <p>entrepruner</p>
+              </div>
+            </div>
+          </div>
+           {/* section end    */}
+          <div className="swiper-slide">
+            <div className="swiper-client-msg">
+              <p>
+                "I’m extremely impressed with the website they built for my
+                company. It’s clean, functional, and user-friendly. Their team
+                delivered exactly what we needed—on time and with great
+                communication."
+              </p>
+            </div>
+            <div className="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/lady3.jpg" alt="client review" />
+              </figure>
+              <div className="client-data-details">
+                <p>angelina jolie</p>
+                <p>entrepruner</p>
+              </div>
+            </div>
+          </div>
+           {/* section end    */}
+          <div className="swiper-slide">
+            <div className="swiper-client-msg">
+              <p>
+                "I’m extremely impressed with the website they built for my
+                company. It’s clean, functional, and user-friendly. Their team
+                delivered exactly what we needed—on time and with great
+                communication."
+              </p>
+            </div>
+            <div className="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/jennifer lawrence.jpg" alt="client review" />
+              </figure>
+              <div className="client-data-details">
+                <p>jennifer lawrence</p>
+                <p>entrepruner</p>
+              </div>
+            </div>
+          </div>
+           {/* section end    */}
+          <div className="swiper-slide">
+            <div className="swiper-client-msg">
+              <p>
+                "I’m extremely impressed with the website they built for my
+                company. It’s clean, functional, and user-friendly. Their team
+                delivered exactly what we needed—on time and with great
+                communication."
+              </p>
+            </div>
+            <div className="swiper-client-data grid grid-two-column">
+              <figure>
+                <img src="images/kate winslet.webp" alt="client review" />
+              </figure>
+              <div className="client-data-details">
+                <p>kate winslet</p>
+                <p>entrepruner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="swiper-pagination"></div>
+      </div>
+    </section>
+
      {/* our freelancing section starts  */}
 
     <section className="section section-freelancing">

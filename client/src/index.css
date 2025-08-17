@@ -645,7 +645,7 @@ a.active {
 
 /***** Footer End Section *****/
 
-/***** Our Testimonial/Slide Section Starts *****/
+/***** Our Testimonial/Slides Section Starts *****/
 
 .swiper {
   width: 100%;
@@ -736,12 +736,12 @@ a.active {
   border: 0.5rem solid var(--helper-tint);
 }
 
-/***** Our Testimonial/Slide Section End *****/
+/***** Our Testimonial/Slides Section Ends *****/
 
 /***** Our freelancing Section Starts *****/
 
 .section-freelancing {
-  background-image: url(../images/parallexeffect.avif);
+  background-image: url(images/parallexeffect.avif);
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
