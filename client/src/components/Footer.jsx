@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export const Footer = () => {
     return (
         <>
@@ -16,7 +18,7 @@ export const Footer = () => {
           <ul>
             <li>
               <span><ion-icon name="arrow-forward-outline" /></span>
-              <a href="./index.html">home</a>
+              <NavLink to="/">home</NavLink>
             </li>
             <li>
               <span><ion-icon name="arrow-forward-outline" /></span>
@@ -32,7 +34,7 @@ export const Footer = () => {
             </li>
             <li>
               <span><ion-icon name="arrow-forward-outline" /></span>
-              <a href="./contact.html">contact</a>
+              <NavLink to="/contact">contact</NavLink>
             </li>
           </ul>
         </div>
@@ -54,7 +56,7 @@ export const Footer = () => {
             </li>
             <li>
               <span><ion-icon name="arrow-forward-outline" /></span>
-              <a href="#">Online Classes</a>
+              <a href="#">Web Hosting</a>
             </li>
             <li>
               <span><ion-icon name="arrow-forward-outline" /></span>
