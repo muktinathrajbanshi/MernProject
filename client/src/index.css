@@ -645,6 +645,145 @@ a.active {
 
 /***** Footer End Section *****/
 
+/***** Our Testimonial/Slide Section Starts *****/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 9rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-client-msg {
+  padding: 5rem 8rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  text-align: left;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.swiper-client-msg::before {
+  content: "";
+  position: absolute;
+  bottom: -10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5rem solid var(--white);
+  border-color: transparent;
+  border-top-color: var(--helper-tint);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.swiper-client-msg p::before {
+  content: "\f10d";
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 5rem;
+  color: #ced3ff;
+}
+
+.swiper-client-msg p::after {
+  content: "\f10e";
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 5rem;
+  color: #ced3ff;
+}
+
+.swiper-client-data {
+  align-items: center;
+  margin-top: 3.2rem;
+  gap: 3.2rem;
+}
+
+.swiper-slide img {
+  max-width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 0.5rem solid var(--helper-tint);
+}
+
+/***** Our Testimonial/Slide Section End *****/
+
+/***** Our freelancing Section Starts *****/
+
+.section-freelancing {
+  background-image: url(../images/parallexeffect.avif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  position: relative;
+  transition: all 0.7s linear;
+  -webkit-transition: all 0.7s linear;
+  -moz-transition: all 0.7s linear;
+  -ms-transition: all 0.7s linear;
+  -o-transition: all 0.7s linear;
+  text-align: center;
+}
+
+.section-freelancing .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay);
+  opacity: 0.7;
+}
+
+.section-freelancing .container {
+  position: relative;
+}
+
+.section-freelancing h2 {
+  font-size: 5.2rem;
+}
+
+.section-freelancing span {
+  color: #a0f669;
+}
+
+.section-freelancing h2,
+.section-freelancing p {
+  color: var(--white);
+  margin-bottom: 1.8rem;
+}
+
+/***** Our freelancing Section End *****/
+
 /***** Contact Section Starts *****/
 
 .section-contact-main {
@@ -681,19 +820,6 @@ a.active {
   font-family: "work sans";
   width: 100%;
 }
-
-/* .section-contact-main button {
-  padding: 1.2rem 2rem;
-  border: 0.1rem solid #c9c9c9;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  font-size: 1.6rem;
-  font-family: "work sans";
-  width: 100%;
-} */
 
 .section-contact-main button[type="submit"] {
   max-width: 30%;

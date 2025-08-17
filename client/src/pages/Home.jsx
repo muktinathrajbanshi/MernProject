@@ -1,5 +1,6 @@
 import { WorkSection } from "../components/Work-Section";
 import { Contact } from "./Contact";
+import { NavLink } from "react-router-dom";
 
 export const Home = () => {
   return(
@@ -16,7 +17,7 @@ export const Home = () => {
               innovative, tailor-made IT solutions to help you stay ahead in the digital era.
             </p>
             <div>
-              <a href="/contact"><button className="btn hireme-btn">connect now</button></a>
+              <NavLink to="/contact"><button className="btn hireme-btn">connect now</button></NavLink>
               {/* <a href="/services"><button className="btn hireme-btn">learn more</button></a> */}
             </div>
           </div>
@@ -191,6 +192,17 @@ export const Home = () => {
           </div>
       </div>
     </div>
+
+     {/* our freelancing section starts  */}
+
+    <section className="section section-freelancing">
+      <div className="overlay"></div>
+      <div className="container">
+        <h2>I am <span>available</span> for freelancing</h2>
+        <p>Hello, Are you looking for Website application? Then this will be the right destination for you!.</p>
+        <NavLink to="/contact" className="btn">HIRE ME</NavLink>
+      </div>
+    </section>
 
     {/* contact section  */}
           <Contact />
