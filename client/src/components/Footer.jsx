@@ -109,7 +109,7 @@ export const Footer = () => {
 
         <div className="f-credits">
           <p>
-            Copyright © {new Date().getFullYear()} All rights reserved | This template is made with 🤍 by Muktinath Rajbanshi
+            Copyright © {new Date().getFullYear()} All rights reserved | This application is made with 🤍 by Muktinath Rajbanshi
           </p>
         </div>
       </div>
