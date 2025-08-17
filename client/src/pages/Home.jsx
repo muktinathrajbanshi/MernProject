@@ -199,10 +199,10 @@ export const Home = () => {
       <div className="container">
         <h2 className="common-heading">Happy Client Works</h2>
       </div>
-       Swiper
+       {/* Swiper  */}
       <div className="swiper mySwiper container">
         <div className="swiper-wrapper">
-           section start  
+           {/* section start   */}
           <div className="swiper-slide">
             <div className="swiper-client-msg">
               <p>
@@ -214,7 +214,7 @@ export const Home = () => {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src="images/natalie portman.jpg" alt="client review" />
+                <img src="images/natalie portman.avif" alt="client review" />
               </figure>
               <div className="client-data-details">
                 <p>natalie portman</p>
@@ -234,7 +234,7 @@ export const Home = () => {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src="images/tom cruise.jpg" alt="client review" />
+                <img src="images/tom cruise.avif" alt="client review" />
               </figure>
               <div className="client-data-details">
                 <p>tom cruise</p>
@@ -254,7 +254,7 @@ export const Home = () => {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src="images/hero.jpg" alt="client review" />
+                <img src="images/hero.avif" alt="client review" />
               </figure>
               <div className="client-data-details">
                 <p>muktinath rajbanshi</p>
@@ -274,7 +274,7 @@ export const Home = () => {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src="images/emma stone.jpg" alt="client review" />
+                <img src="images/emma stone.avif" alt="client review" />
               </figure>
               <div className="client-data-details">
                 <p>emma stone</p>
@@ -314,7 +314,7 @@ export const Home = () => {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src="images/chris.jpg" alt="client review" />
+                <img src="images/chris.avif" alt="client review" />
               </figure>
               <div className="client-data-details">
                 <p>chris hemsworth</p>
@@ -334,7 +334,7 @@ export const Home = () => {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src="images/lady3.jpg" alt="client review" />
+                <img src="images/angelina julie.avif" alt="client review" />
               </figure>
               <div className="client-data-details">
                 <p>angelina jolie</p>
@@ -354,7 +354,7 @@ export const Home = () => {
             </div>
             <div className="swiper-client-data grid grid-two-column">
               <figure>
-                <img src="images/jennifer lawrence.jpg" alt="client review" />
+                <img src="images/jennifer lawrence.avif" alt="client review" />
               </figure>
               <div className="client-data-details">
                 <p>jennifer lawrence</p>
