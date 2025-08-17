@@ -1,4 +1,4 @@
-import { Testimonial } from "../components/Testimonial";
+import  Testimonial  from "../components/Testimonial";
 import { WorkSection } from "../components/Work-Section";
 import { Contact } from "./Contact";
 import { NavLink } from "react-router-dom";
