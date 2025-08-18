@@ -1,4 +1,4 @@
-import  Testimonial  from "../components/Testimonial";
+import { Testimonial }  from "../components/Testimonial";
 import { WorkSection } from "../components/Work-Section";
 import { Contact } from "./Contact";
 import { NavLink } from "react-router-dom";
@@ -93,6 +93,90 @@ export const Home = () => {
              download
              target="_blank"
              >Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     {/* portfolio section starts  */}
+
+     <section className="section section-portfolio" id="portfolio-section">
+      <div className="container">
+        <h2 className="common-heading">Latest Works</h2>
+        <p>
+          Hello everyone, this is the time for doing something great for
+          upcoming future credentials. We have to focus our dream and should
+          have give consistency for the real achievement.
+        </p>
+      </div>
+      <div className="p-btns">
+        <div className="btn p-btn" data-btn-num="1">Website</div>
+        <div className="btn p-btn" data-btn-num="2">Youtube</div>
+        <div className="btn p-btn" data-btn-num="3">Design</div>
+      </div>
+      <div className="container grid grid-three-column portfolio-images">
+        <div className="img-overlay p-btn--1">
+          <img src="images/web1.avif" alt="my works" />
+          <div className="overlay">
+            <a
+              href="https://reactwebsite-41216.web.app/"
+              target="_mukti"
+              className="common-heading"
+              >Project 1</a>
+          </div>
+        </div>
+
+        <div className="img-overlay p-btn--1">
+          <img src="images/web2.avif" alt="my works" />
+          <div className="overlay">
+            <a
+              href="https://muktinathrajbanshi.github.io/ReactTutorial/"
+              target="_mukti"
+              className="common-heading"
+              >Project 2</a>
+          </div>
+        </div>
+
+        <div className="img-overlay p-btn--1">
+          <img src="images/web3.avif" alt="my works" />
+          <div className="overlay">
+            <a
+              href="https://weatherappexpressjs-44vq.onrender.com/"
+              target="_mukti"
+              className="common-heading"
+              >Project 3</a>
+          </div>
+        </div>
+
+        <div className="img-overlay p-btn--1">
+          <img src="images/web4.avif" alt="my works" />
+          <div className="overlay">
+            <a
+              href="https://muktinathecom.netlify.app/"
+              target="_mukti"
+              className="common-heading"
+              >Project 4</a>
+          </div>
+        </div>
+
+        <div className="img-overlay p-btn--2">
+          <img src="images/youtube.avif" alt="my works" />
+          <div className="overlay">
+            <a
+              href="https://www.youtube.com/@muktinathrajbanshi219"
+              target="_mukti"
+              className="common-heading"
+              >Project 5</a>
+          </div>
+        </div>
+        <div className="img-overlay p-btn--3">
+          <img src="images/dsign.png" alt="my works" />
+          <div className="overlay">
+            <a
+              href="https://github.com/muktinathrajbanshi"
+              target="_mukti"
+              className="common-heading"
+              >Project 6</a>
           </div>
         </div>
       </div>

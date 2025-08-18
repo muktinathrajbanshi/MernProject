@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 
 
-export default function Testimonial() {
+export function Testimonial() {
   return (
     <section className="section section-testimonial">
       <div className="container">
