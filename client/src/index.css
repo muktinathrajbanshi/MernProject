@@ -208,11 +208,11 @@ a.active {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
 }
 
 .btn:hover,
@@ -1481,8 +1481,9 @@ body tr {
   }
   .btn {
     padding: 1rem 2rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
+
   .counter-numbers {
     font-size: 3.2rem;
   }
