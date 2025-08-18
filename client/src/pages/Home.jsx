@@ -1,4 +1,5 @@
 import { Portfolio } from "../components/Portfolio-Section";
+import { ScrollToTop } from "../components/ScrollToTop";
 import { Testimonial }  from "../components/Testimonial";
 import { WorkSection } from "../components/Work-Section";
 import { Contact } from "./Contact";
@@ -217,6 +218,10 @@ export const Home = () => {
 
     {/* contact section  */}
           <Contact />
+
+    {/* scroll to top  */}
+      <ScrollToTop />
+
     </>
 );
 };

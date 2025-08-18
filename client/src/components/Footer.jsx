@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { ScrollToTop } from "./ScrollToTop";
 
 export const Footer = () => {
     return (
@@ -117,7 +116,6 @@ export const Footer = () => {
         </div>
       </div>
     </footer>
-    <ScrollToTop />
         </>
     );
 };

@@ -301,6 +301,7 @@ a.active {
 .navbar-link.login-link {
   color: var(--helper-tint);
   display: inline-block;
+  text-decoration: none;
   padding: 1rem 2rem;
   background: var(--gradientSupport);
   border-radius: 2rem;
@@ -311,7 +312,7 @@ a.active {
   line-height: 1.5rem;
   font-weight: 400;
   text-align: center;
-  border: 1px solid transparent;
+  border: none;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
