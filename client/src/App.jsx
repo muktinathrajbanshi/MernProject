@@ -14,6 +14,7 @@ import { AdminLayout } from "./components/layouts/Admin-Layout";
 import { AdminUsers } from "./pages/Admin-Users";
 import { AdminContacts } from "./pages/Admin-Contacts";
 import { AdminUpdate } from "./pages/Admin-Update";
+import { Portfolio } from "./components/Portfolio-Section";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />}/>
