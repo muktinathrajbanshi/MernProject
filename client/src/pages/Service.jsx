@@ -14,19 +14,21 @@ export const Service = () => {
                      like website design, photography, HTML, CSS, Javascript and so on
                     </p>
                 </div>
-                <div className="container grid grid-three-cols">
+                <div className="container grid grid-three-column">
                     
                         {
                             services.map((curElem, index) => {
                                 const { price, description, provider, service } = curElem;
 
                                 return (
-                                <div className="card" key={index}>
+                                <div key={index}>
                                     <div className="service-box">
-                                        <div className="grid grid-two-cols">
+                                        {/* <div className="grid grid-two-cols">
                                             <p>{provider}</p>
                                             <p>{price}</p>
-                                        </div>
+                                        </div> */}
+                                         <ion-icon name="desktop-sharp" className="service-icon" />
+
                                         <h3>{service}</h3>
                                         <p>{description}</p>
                                     </div>
