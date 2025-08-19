@@ -26,11 +26,11 @@ export const Footer = () => {
             </li>
             <li>
               <span><ion-icon name="arrow-forward-outline" /></span>
-              <a href="./service.html">services</a>
+              <NavLink to="/service">services</NavLink>
             </li>
             <li>
               <span><ion-icon name="arrow-forward-outline" /></span>
-              <a href="./portfolio.html">portfolio</a>
+              <NavLink to="/portfolio">portfolio</NavLink>
             </li>
             <li>
               <span><ion-icon name="arrow-forward-outline" /></span>

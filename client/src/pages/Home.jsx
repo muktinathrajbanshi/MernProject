@@ -13,7 +13,7 @@ export const Home = () => {
       <section className="section-hero section">
         <div className="container grid grid-two-column">
           <div className="section-hero-data">
-            <p className="hero-top-data">this is me</p>
+            <p className="hero-top-data">welcomt to</p>
             <div className="hero-heading">muktinath tech</div>
             <p className="hero-para">
               I'm muktinath rajbanshi. A Full stack Developer, youtuber and freelancer. 
