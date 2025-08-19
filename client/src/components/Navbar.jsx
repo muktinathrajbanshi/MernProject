@@ -101,9 +101,20 @@ export const Navbar = () => {
 
       {/* Mobile menu button */}
       <div className="mobile-navbar-btn" onClick={toggleMenu}>
-        <ion-icon name="menu-outline" className="mobile-nav-icon" />
-        <ion-icon name="close-outline" className="mobile-nav-icon" />
+        {/* <ion-icon name="menu-outline" className="mobile-nav-icon" />
+        <ion-icon name="close-outline" className="mobile-nav-icon" /> */}
+
+           <ion-icon
+            name="menu-outline"
+            className={`mobile-nav-icon ${!menuActive ? "active" : ""}`}
+          />
+          <ion-icon
+            name="close-outline"
+            className={`mobile-nav-icon ${menuActive ? "active" : ""}`}
+          />
+
       </div>
+
     </header>
   );
 };
