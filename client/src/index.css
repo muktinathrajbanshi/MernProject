@@ -36,7 +36,7 @@
   --black: #212529;
   --overlay: #3e64ff;
   --helper: #8490ff;
-  --btn-color: #1b9cfc;
+  --btn-color: #7b2ff7;
   --icons-bg: rgba(144, 172, 209, 0.2);
   --extra-icon: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   --helper-tint: #f3f4ff;
@@ -305,13 +305,11 @@ textarea {
   font-size: 5.9rem;
   background: linear-gradient(
     -60deg,
-    #71b7e6,
+    #00c6ff,
+    #0072ff,
     var(--btn-color),
-    #b98acc,
-    #ee8176,
-    #b98acc,
-    var(--btn-color),
-    #9b59b6
+    #f107a3,
+    #ff6a00
   );
   background-size: 300% 300%;
   -webkit-background-clip: text;
