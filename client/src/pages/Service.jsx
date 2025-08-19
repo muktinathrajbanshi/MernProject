@@ -11,26 +11,27 @@ export const Service = () => {
                     <h2 className="common-heading">Services offers</h2>
                     <p>
                      Hello, this is services section where you can visit multiple services
-                     like website design, photography, HTML, CSS, Javascript and so on
+                     like website design, web hosting, web development and so on.
                     </p>
                 </div>
                 <div className="container grid grid-three-column">
                     
                         {
                             services.map((curElem, index) => {
-                                const { price, description, provider, service } = curElem;
+                                const { price, description, provider, service, icon } = curElem;
 
                                 return (
                                 <div key={index}>
                                     <div className="service-box">
-                                        {/* <div className="grid grid-two-cols">
-                                            <p>{provider}</p>
-                                            <p>{price}</p>
-                                        </div> */}
-                                         <ion-icon name="desktop-sharp" className="service-icon" />
+                                        
+                                         <ion-icon name={icon} className="service-icon" />
 
                                         <h3>{service}</h3>
                                         <p>{description}</p>
+                                        <div className=" grid-two-column">
+                                            <p>{provider}</p>
+                                            <p>{price}</p>
+                                        </div>
                                     </div>
                             </div>
                             );

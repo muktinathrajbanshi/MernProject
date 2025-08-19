@@ -4,6 +4,7 @@ import { Testimonial }  from "../components/Testimonial";
 import { WorkSection } from "../components/Work-Section";
 import { Contact } from "./Contact";
 import { NavLink } from "react-router-dom";
+import { Service } from "./Service";
 
 export const Home = () => {
   return(
@@ -106,6 +107,9 @@ export const Home = () => {
 
      {/* work counter section start  */}
       <WorkSection /> 
+
+      {/* services section starts  */}
+      <Service />
 
      {/* Resume Section Start    */}
 
