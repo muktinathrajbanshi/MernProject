@@ -293,15 +293,40 @@ textarea {
 
 .hero-top-data {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: bolder;
   font-size: 1.5rem;
-  color: var(--helper);
+  margin-bottom: 1.4rem;
+  color: var(--black);
 }
 
 .hero-heading {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 5.9rem;
+  background: linear-gradient(
+    -60deg,
+    #71b7e6,
+    var(--btn-color),
+    #b98acc,
+    #ee8176,
+    #b98acc,
+    var(--btn-color),
+    #9b59b6
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 5s linear infinite;
+  text-transform: uppercase;
+}
+
+@keyframes animate-gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
 }
 
 .hero-para {
