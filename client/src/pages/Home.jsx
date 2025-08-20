@@ -44,7 +44,8 @@ export const Home = () => {
       <section className="section-biodata section">
       <div className="container grid grid-two-column">
         <div className="bio-image">
-          <img src="images/bioimg.avif" alt="my biodata image" />
+          {/* <img src="images/bioimg.avif" alt="my biodata image" /> */}
+          <img src="images/heroimgav.avif" alt="my biodata image" />
         </div>
          {/* bio right side data  */}
         <div className="bio-data">
