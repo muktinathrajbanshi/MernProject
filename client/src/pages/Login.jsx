@@ -73,17 +73,19 @@ export const Login = () => {
                     <div className="container grid grid-two-cols">
                         {/* let's tackle login form  */}
                         <div className="login-form">
-                            <h1 className="main-heading mb-3">Welcome Back</h1>
-                            <p>Login to continue</p>
+                            <h1 className="login-heading mb-3">Welcome Back</h1>
+                            <p className="login-para">Login to continue</p>
                             <br />
 
-                            <form onSubmit={handleSubmit}>
-                                <div>
-                                    <label htmlFor="email">email</label>
+                            <form onSubmit={handleSubmit} className="form-submit-input">
+                                <div className="login-input">
+                                    <label htmlFor="email" />
+                                    <ion-icon name="mail-outline" />
                                     <input 
                                     type="email" 
-                                    name="email" 
-                                    placeholder="enter your email"
+                                    name="email"
+                                    className="login-email" 
+                                    placeholder="Email"
                                     id="email"
                                     required
                                     autoComplete="off"
@@ -92,12 +94,14 @@ export const Login = () => {
                                     />
                                 </div>
                                 
-                                 <div>
-                                    <label htmlFor="password">password</label>
+                                 <div className="login-input">
+                                    <label htmlFor="password" />
+                                    <ion-icon name="lock-closed-outline" />
                                     <input 
                                     type="password" 
-                                    name="password" 
-                                    placeholder="password"
+                                    name="password"
+                                    className="login-password" 
+                                    placeholder="Password"
                                     id="password"
                                     required
                                     autoComplete="off"
@@ -106,7 +110,7 @@ export const Login = () => {
                                     />
                                 </div>
                                 <br />
-                                <button type="submit" className="btn btn-submit">Login Now</button>
+                                <button type="submit" className="btn btn-submit">Login</button>
                             </form>
                         </div>
                     </div>
