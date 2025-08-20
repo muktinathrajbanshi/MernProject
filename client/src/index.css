@@ -1203,8 +1203,8 @@ textarea {
     /*border: 1px solid red;
     */
     background-color: var(--login-color);
-    height: 50rem;
-    width: 38rem;
+    max-width: 38rem;
+    height: auto;
     padding: 4rem 2rem;
     border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
@@ -1235,11 +1235,11 @@ textarea {
       &.navigate {
         font-size: 1.7rem;
         font-weight: 500;
-        padding-right: 7rem;
+        padding-right: 2rem;
 
         & span {
           color: var(--white);
-          padding-left: 3rem;
+          padding-left: 1rem;
         }
 
         & span:hover {
@@ -1281,7 +1281,7 @@ textarea {
 
         & .login-email,
         .login-password {
-          margin-left: 3rem;
+          margin-left: 4.5rem;
           width: 28rem;
           border: none;
           outline: none;
@@ -1782,6 +1782,38 @@ body tr {
   .btns .btnok {
     font-size: 1.2rem;
     font-weight: 700;
+  }
+
+  /* login section  */
+
+  .section-login {
+    & .login-form {
+      & .login-heading {
+        font-size: 4rem;
+        font-weight: lighter;
+        text-align: center;
+        text-transform: capitalize;
+        color: var(--white);
+      }
+    }
+  }
+
+  .section-login {
+    & .login-form {
+      & .login-heading {
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+      }
+
+      & .login-para {
+        font-size: 2rem;
+      }
+      & .form-submit-input {
+        & .login-input {
+          padding: 0.7rem;
+        }
+      }
+    }
   }
 }
 
