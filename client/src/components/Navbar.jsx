@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { useState } from "react";
-// import "../index.css"; 
 
 export const Navbar = () => {
   const { isLoggedIn } = useAuth();
@@ -101,9 +100,6 @@ export const Navbar = () => {
 
       {/* Mobile menu button */}
       <div className="mobile-navbar-btn" onClick={toggleMenu}>
-        {/* <ion-icon name="menu-outline" className="mobile-nav-icon" />
-        <ion-icon name="close-outline" className="mobile-nav-icon" /> */}
-
            <ion-icon
             name="menu-outline"
             className={`mobile-nav-icon ${!menuActive ? "active" : ""}`}
@@ -114,7 +110,6 @@ export const Navbar = () => {
           />
 
       </div>
-
     </header>
   );
 };

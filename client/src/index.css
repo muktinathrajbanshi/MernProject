@@ -30,7 +30,8 @@
 
 :root {
   --heading: rgb(0 10 45);
-  --para: #777;
+  /* --para: #777; */
+  --para: #ccc;
   --para-tint: #e4e4e4;
   --login-color: #535c68;
   --white: #fff;
@@ -66,6 +67,8 @@ h2,
 h3,
 h4 {
   font-family: "Poppins", sans-serif;
+  /* remove below code if not star animation  */
+  color: var(--white);
 }
 
 h1 {
@@ -190,6 +193,10 @@ textarea {
   background-color: var(--helper);
 }
 
+label {
+  color: var(--white);
+}
+
 /***** Reusable Code End *****/
 
 /***** Header/Navbar Section Start *****/
@@ -197,7 +204,7 @@ textarea {
 .header {
   padding: 0 4.8rem;
   height: 10rem;
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -205,6 +212,8 @@ textarea {
 
 .header .logo {
   height: 10rem;
+  /* remove below when not using starbackground  */
+  filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 6px #0ff);
 }
 
 .navbar-lists {
@@ -220,7 +229,8 @@ textarea {
   font-size: 1.8rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--black);
+  /* color: var(--black);  */
+  color: var(--white);
   transition: color 0.3s linear;
   -webkit-transition: color 0.3s linear;
   -moz-transition: color 0.3s linear;
@@ -282,7 +292,7 @@ textarea {
 /***** Hero Section Starts *****/
 
 .section-hero {
-  background-color: var(--bg);
+  /* background-color: var(--bg);  */
 }
 
 .section-hero-data {
@@ -297,7 +307,9 @@ textarea {
   font-weight: bolder;
   font-size: 1.5rem;
   margin-bottom: 1.4rem;
-  color: var(--black);
+  /* color: var(--black); */
+  /* remove if not use starbackground  */
+  color: var(--white);
 }
 
 .hero-heading {
@@ -342,7 +354,8 @@ textarea {
 
 .hero-img {
   max-width: 80%;
-  /* max-height: 80%; */
+  /* remove below if not using staranimation  */
+  margin: 0 0 25rem 15rem;
 }
 
 /***** Hero Section Ends *****/
@@ -461,7 +474,7 @@ textarea {
 /***** Work Data/Counter Section Start *****/
 
 .section-work-data {
-  background: var(--gradientSupport);
+  /* background: var(--gradientSupport);  */
   text-align: center;
   color: var(--white);
   transition: all 0.7s linear;
@@ -608,7 +621,8 @@ textarea {
 }
 
 .resume-para {
-  color: var(--black);
+  /* color: var(--black); */
+  color: var(--white);
   margin-top: -1.2rem;
   margin-bottom: 2rem;
 }
@@ -675,7 +689,7 @@ textarea {
 /***** Footer Section *****/
 
 .section-footer {
-  background-color: var(--heading);
+  /* background-color: var(--heading); */
   transition: all 0.7s linear;
   -webkit-transition: all 0.7s linear;
   -moz-transition: all 0.7s linear;
@@ -689,7 +703,8 @@ textarea {
 }
 
 .f-about p {
-  color: #adadad;
+  /* add when you not link star animation  */
+  /* color: #adadad;  */
 }
 
 .f-links ul,
@@ -706,7 +721,9 @@ textarea {
 .f-services li,
 .f-services a {
   font-size: 1.8rem;
-  color: #adadad;
+  /* color: #adadad;  */
+  /* remove below one when star animation not added */
+  color: #ccc;
   text-transform: capitalize;
 }
 
@@ -719,7 +736,9 @@ textarea {
 .f-address p,
 .f-address a {
   font-style: normal;
-  color: #adadad;
+  /* color: #adadad;  */
+  /* remove below one when not added star animation  */
+  color: #ccc;
 }
 
 .f-social-icons {
@@ -751,7 +770,9 @@ textarea {
 
 .f-credits p {
   text-align: center;
-  color: #adadad;
+  /* color: #adadad; */
+  /* remove when not added star animation  */
+  color: #ccc;
 }
 
 .footer a:hover,
@@ -764,7 +785,7 @@ textarea {
 /***** Portfolio Section Starts *****/
 
 .section-portfolio {
-  background: var(--bg);
+  /* background: var(--bg); */
   transition: all 0.7s linear;
   -webkit-transition: all 0.7s linear;
   -moz-transition: all 0.7s linear;
@@ -897,7 +918,7 @@ textarea {
 
 .swiper-client-msg {
   padding: 5rem 8rem;
-  background-color: var(--white);
+  /* background-color: var(--white);  */
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -914,7 +935,8 @@ textarea {
   bottom: -10rem;
   left: 50%;
   transform: translateX(-50%);
-  border: 5rem solid var(--white);
+  /* border: 5rem solid var(--white); */
+  border: 5rem solid #ced3ff;
   border-color: transparent;
   border-top-color: var(--helper-tint);
   -webkit-transform: translateX(-50%);
@@ -986,7 +1008,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--overlay);
+  /* background-color: var(--overlay);  */
   opacity: 0.7;
 }
 
@@ -1045,6 +1067,9 @@ textarea {
   font-size: 1.6rem;
   font-family: "work sans";
   width: 100%;
+  /* remove below 2 if not star animation  */
+  background: transparent;
+  color: var(--white);
 }
 
 .section-contact-main button[type="submit"] {
@@ -1680,6 +1705,7 @@ body tr {
 
   .section-hero img {
     width: 70%;
+    margin: 0;
   }
 
   /* bio data  */

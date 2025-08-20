@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../store/auth";
+import { StarsBackground } from "../components/Stars-Background";
 
 const defaultContactFormData = {
     username: "",
@@ -67,7 +68,7 @@ export const Contact = () => {
                 <div className="container">
                     <h2 className="common-heading">contact us</h2>
                 </div>
-
+                
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3070720014725!2d-74.00775072438424!3d40.71125617139376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fe30a7b447%3A0x8a0a55f0a5fd1f1f!2sPace%20University!5e0!3m2!1sen!2snp!4v1753250830337!5m2!1sen!2snp"
                     width="100%" 
                     height="350" 
@@ -76,7 +77,7 @@ export const Contact = () => {
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade">
                 </iframe>
-
+                
                 {/* contact page main  */}
                 <div className="section-contact-main contact-container">
                             <form onSubmit={handleSubmit}>

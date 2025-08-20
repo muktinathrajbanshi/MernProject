@@ -15,10 +15,12 @@ import { AdminUsers } from "./pages/Admin-Users";
 import { AdminContacts } from "./pages/Admin-Contacts";
 import { AdminUpdate } from "./pages/Admin-Update";
 import { Portfolio } from "./components/Portfolio-Section";
+// import { StarsBackground } from "./components/Stars-Background";
 
 const App = () => {
   return (
     <>
+    {/* <StarsBackground /> */}
     <BrowserRouter>
       <Navbar />
       <Routes>

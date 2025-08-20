@@ -5,10 +5,12 @@ import { WorkSection } from "../components/Work-Section";
 import { Contact } from "./Contact";
 import { NavLink } from "react-router-dom";
 import { Service } from "./Service";
+import { StarsBackground } from "../components/Stars-Background";
 
 export const Home = () => {
   return(
     <>
+       <StarsBackground />
      <main>
       <section className="section-hero section">
         <div className="container grid grid-two-column">
@@ -22,13 +24,13 @@ export const Home = () => {
             </p>
             <div>
               <NavLink to="/contact"><button className="btn hireme-btn">connect now</button></NavLink>
-              {/* <a href="/services"><button className="btn hireme-btn">learn more</button></a> */}
             </div>
           </div>
           {/* hero section right side  */}
           <div className="section-hero-image">
             <img 
-            src="/images/heroimg.avif" 
+            // src="/images/heroimg.avif" 
+            src="/images/heroimgav.avif"
             alt="hero section img" 
             className="hero-img"
              />

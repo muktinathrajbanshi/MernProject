@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
+import { StarsBackground } from "../components/Stars-Background";
 
 
 export const Login = () => {
@@ -68,8 +69,8 @@ export const Login = () => {
 
     return (
         <>
+            <StarsBackground />
             <section className="section section-login">
-                
                     <div className="container grid grid-two-cols">
                         {/* let's tackle login form  */}
                         <div className="login-form">
@@ -113,11 +114,10 @@ export const Login = () => {
                                 <button type="submit" className="btn btn-submit">Login</button>
                                 <br />
                                 <p className="login-para query">Forgot password?</p>
-                                <p className="login-para navigate">Don't have an account?   <NavLink to="/register"><span>Sign up</span></NavLink></p>
+                                <p className="login-para navigate">Don't have an account?<NavLink to="/register"><span>Sign up</span></NavLink></p>
                             </form>
                         </div>
                     </div>
-                
         </section>
         </>
     );
