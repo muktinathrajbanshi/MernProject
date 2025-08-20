@@ -616,7 +616,7 @@ label {
 
 .resume-img img {
   max-width: 80%;
-  box-shadow: -2rem 2rem 0 0 var(--helper);
+  /* box-shadow: -2rem 2rem 0 0 var(--helper); */
   display: inline-block;
 }
 
@@ -1739,6 +1739,7 @@ body tr {
   }
   .section-resume .resume-img img {
     width: 70%;
+    margin: 0;
   }
 }
 

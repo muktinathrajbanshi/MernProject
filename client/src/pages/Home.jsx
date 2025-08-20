@@ -121,8 +121,10 @@ export const Home = () => {
          {/* resume left side   */}
          <div className="resume-img">
           <img 
-          src="images/lazy1.avif"
-          data-src="images/biodata.jpg"
+          // src="images/lazy1.avif"
+          src="images/heroimgav.avif"
+          // data-src="images/biodata.jpg"
+          data-src="images/heroimgav.avif"
            alt="resume image" 
            className="lazy-img"
            loading="lazy" />
