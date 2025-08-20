@@ -1190,6 +1190,22 @@ textarea {
 
 /***** Ragister Section End *****/
 
+/***** Login Section Starts *****/
+
+.section-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .login-form {
+    border: 1px solid red;
+    padding: 4rem 2rem;
+  }
+}
+
+/***** Login Section End *****/
+
 thead {
   border-bottom: 3.5px solid grey;
   color: #000;

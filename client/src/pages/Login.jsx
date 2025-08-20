@@ -68,21 +68,13 @@ export const Login = () => {
 
     return (
         <>
-            <section>
-            <main>
-                <div className="section-registration">
+            <section className="section section-login">
+                
                     <div className="container grid grid-two-cols">
-                        <div className="registration-image">
-                            <img 
-                            src="/images/login.svg" 
-                            alt="login img"
-                            width="500"
-                            height="500"    
-                            />
-                        </div>
-                        {/* let's tackle registration form  */}
-                        <div className="registration-form">
-                            <h1 className="main-heading mb-3">login form</h1>
+                        {/* let's tackle login form  */}
+                        <div className="login-form">
+                            <h1 className="main-heading mb-3">Welcome Back</h1>
+                            <p>Login to continue</p>
                             <br />
 
                             <form onSubmit={handleSubmit}>
@@ -118,8 +110,7 @@ export const Login = () => {
                             </form>
                         </div>
                     </div>
-                </div>
-            </main>
+                
         </section>
         </>
     );
