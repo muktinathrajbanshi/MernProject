@@ -1200,16 +1200,17 @@ textarea {
   align-items: center;
 
   & .login-form {
-    /* border: 1px solid red; */
+    /*border: 1px solid red;
+    */
     background-color: var(--login-color);
     height: 50rem;
-    width: 50rem;
+    width: 38rem;
     padding: 4rem 2rem;
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
 
     & .login-heading {
       font-size: 4rem;
@@ -1220,9 +1221,31 @@ textarea {
     }
 
     & .login-para {
-      font-size: 2rem;
+      font-size: 2.2rem;
+      margin-bottom: 1.8rem;
       color: var(--white);
       text-align: center;
+
+      &.query {
+        font-size: 1.7rem;
+        margin-top: 1.5rem;
+        letter-spacing: 0.1rem;
+      }
+
+      &.navigate {
+        font-size: 1.7rem;
+        font-weight: 500;
+        padding-right: 7rem;
+
+        & span {
+          color: var(--white);
+          padding-left: 3rem;
+        }
+
+        & span:hover {
+          color: var(--helper);
+        }
+      }
     }
 
     & .form-submit-input {
@@ -1236,7 +1259,7 @@ textarea {
         align-items: center;
         padding: 1rem 0;
         margin-bottom: 2rem;
-        border: 1px solid rgba(255, 255, 255, 0.5);
+        border: 1.5px solid rgba(255, 255, 255, 0.3);
         border-radius: 0.5rem;
         -webkit-border-radius: 0.5rem;
         -moz-border-radius: 0.5rem;
@@ -1259,10 +1282,10 @@ textarea {
         & .login-email,
         .login-password {
           margin-left: 3rem;
-          width: 40rem;
+          width: 28rem;
           border: none;
           outline: none;
-          /* font-size: 1.5rem; */
+          font-size: 1.5rem;
           color: var(--white);
           background-color: var(--login-color);
         }

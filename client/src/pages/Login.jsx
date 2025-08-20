@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 
@@ -111,6 +111,9 @@ export const Login = () => {
                                 </div>
                                 <br />
                                 <button type="submit" className="btn btn-submit">Login</button>
+                                <br />
+                                <p className="login-para query">Forgot password?</p>
+                                <p className="login-para navigate">Don't have an account?   <NavLink to="/register"><span>Sign up</span></NavLink></p>
                             </form>
                         </div>
                     </div>
