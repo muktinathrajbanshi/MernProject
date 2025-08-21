@@ -94,8 +94,8 @@ p {
 }
 
 p:hover {
-  transform: translateX(0.8rem);
   color: var(--white);
+  transform: translateX(0.8rem);
   -webkit-transform: translateX(0.8rem);
   -moz-transform: translateX(0.8rem);
   -ms-transform: translateX(0.8rem);
@@ -436,7 +436,7 @@ label {
 }
 
 .about-content h1 {
-  font-size: 3rem;
+  font-size: 6rem;
   font-weight: 700;
   margin-bottom: 1rem;
   background: linear-gradient(90deg, #00d4ff, #7d5fff);
@@ -532,15 +532,17 @@ label {
 }
 
 .feature-icon {
-  font-size: 8.5rem;
-  color: var(--white);
+  font-size: 8rem;
+  color: #00ffff;
+  /* color: var(--white); */
+  text-shadow: 0 0 15px #00ffff, 0 0 25px #00ffff;
   margin-bottom: 1rem;
 }
 
 .feature-card h3 {
   /* color: #0072ff; */
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .feature-card p {
