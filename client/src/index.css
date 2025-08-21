@@ -500,7 +500,7 @@ label {
 }
 
 .feature-card {
-  background: var(--btn-color);
+  background: var(--white);
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
@@ -514,19 +514,20 @@ label {
 }
 
 .feature-icon {
-  font-size: 2.5rem;
-  color: #6366f1;
+  font-size: 8.5rem;
+  color: #00ffff;
   margin-bottom: 1rem;
 }
 
 .feature-card h3 {
-  font-size: 1.3rem;
+  color: #0072ff;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
 .feature-card p {
-  color: #6b7280;
-  font-size: 1rem;
+  color: var(--para);
+  font-size: 1.8rem;
   line-height: 1.6;
 }
 
