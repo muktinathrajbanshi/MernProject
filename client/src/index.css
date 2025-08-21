@@ -500,7 +500,7 @@ label {
 }
 
 .feature-card {
-  background: white;
+  background: var(--btn-color);
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);

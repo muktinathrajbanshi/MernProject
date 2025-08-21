@@ -10,7 +10,7 @@ export const About = () => {
     <main>
       
        {/* Hero Section */}
-        <section className="about-hero">
+        <section className=" section about-hero">
           <div className="container grid-two-column">
             
             {/* Left Content */}
@@ -22,10 +22,10 @@ export const About = () => {
                 Why Choose <span className="highlight">Us?</span>
               </h1>
               <p className="hero-description">
-                We bring innovation, expertise, and customer-focused solutions to empower your business in the digital era.
+               We’re more than just an IT company—we’re your trusted growth partner. With innovation, reliability, and a people-first approach, we deliver technology solutions that drive real business impact.
               </p>
               <NavLink to="/contact">
-                <button className="hero-btn">Connect Now</button>
+                <button className="btn">Connect Now</button>
               </NavLink>
             </div>
 
