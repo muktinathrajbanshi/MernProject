@@ -324,7 +324,10 @@ label {
   margin-bottom: 1.4rem;
   /* color: var(--black); */
   /* remove if not use starbackground  */
-  color: var(--white);
+}
+
+.hero-header-greeting {
+  background: linear-gradient(90deg, #00d4ff, #7d5fff);
 }
 
 .hero-heading {
@@ -413,6 +416,10 @@ label {
   overflow: hidden;
 }
 
+.hero-description {
+  margin-bottom: 5rem;
+}
+
 .container.grid-two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -482,6 +489,7 @@ label {
 .about-image img:hover {
   transform: scale(1.05);
 }
+
 /* Features Section */
 .about-features {
   /* background: #f9fafb; */
@@ -493,21 +501,35 @@ label {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .feature-card {
-  /* background: var(--white); */
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  /*background: var(--white);
+  */
+  padding: 6.4rem 3.4rem;
+  cursor: pointer;
+  box-shadow: var(--shadowSupport);
   text-align: center;
-  transition: 0.3s;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 @keyframes glow {
@@ -536,14 +558,8 @@ label {
 
 .feature-card h3 {
   /* color: #0072ff; */
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
-}
-
-.feature-card p {
-  color: var(--para);
-  font-size: 1.7rem;
-  line-height: 1.6;
 }
 
 /* Responsive */
@@ -743,7 +759,7 @@ label {
 
 .service-box {
   text-align: center;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadowSupport);
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;

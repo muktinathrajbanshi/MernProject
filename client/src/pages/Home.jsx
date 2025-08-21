@@ -15,7 +15,7 @@ export const Home = () => {
       <section className="section-hero section">
         <div className="container grid grid-two-column">
           <div className="section-hero-data">
-            <p className="hero-top-data">welcomt to</p>
+            <h2 className="hero-top-data"><span className="hero-header-greeting">welcomt to</span></h2>
             <div className="hero-heading">muktinath tech</div>
             <p className="hero-para">
               I'm muktinath rajbanshi. A Full stack Developer, youtuber and freelancer. 
