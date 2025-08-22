@@ -82,7 +82,7 @@ export const Register = () => {
                             <br />
 
                             <form onSubmit={handleSubmit} className="form-submit-input">
-                                <div className="regis-input">
+                                <div className="ragis-input">
                                     <label htmlFor="username" />
                                     <ion-icon name="person-outline"></ion-icon>
                                     <input 
