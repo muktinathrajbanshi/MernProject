@@ -423,7 +423,7 @@ label {
   font-size: 6rem;
   font-weight: 700;
   line-height: 8rem;
-  margin-bottom: -2rem;
+  margin-top: 1rem;
   background: linear-gradient(90deg, #00d4ff, #7d5fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -453,18 +453,6 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 1.5rem;
-  box-shadow: 0 8px 30px rgba(0, 212, 255, 0.4);
-  transition: transform 0.4s ease;
-}
-
-.about-image img:hover {
-  transform: scale(1.05);
 }
 
 /* Features Section */
@@ -2040,6 +2028,25 @@ body tr {
   }
 
   .section-hero img {
+    width: 70%;
+    margin: 3.2rem 0 0 0;
+  }
+
+  /* about section  */
+  .section-about .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .section-about-data {
+    align-items: center;
+  }
+
+  .section-about-data h1 {
+    text-align: center;
+    font-size: 5rem;
+  }
+
+  .about-image img {
     width: 70%;
     margin: 3.2rem 0 0 0;
   }

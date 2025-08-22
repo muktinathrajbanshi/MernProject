@@ -34,6 +34,7 @@ export const About = () => {
             {/* Right Image */}
             <div className="about-image">
               <img
+                className="hero-img"
                 src="/images/heroimgav.avif"
                 alt="Our Team"
               />
