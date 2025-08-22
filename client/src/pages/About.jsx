@@ -18,8 +18,8 @@ export const About = () => {
               <p className="welcome-text">
                 Welcome {user ? ` ${user.username},` : ""} to our website
               </p>
-              <h1 className="hero-title">
-                Why Choose <span className="highlight">Us?</span>
+              <h1>
+                Why Choose Us?
               </h1>
               <p className="hero-description">
                We’re more than just an IT company—we’re your trusted growth partner. With innovation, reliability, and a people-first approach, we deliver technology solutions that drive real business impact.

@@ -326,8 +326,10 @@ label {
   /* remove if not use starbackground  */
 }
 
-.hero-header-greeting {
+.hero-top-data.hero-top-data {
   background: linear-gradient(90deg, #00d4ff, #7d5fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-heading {
