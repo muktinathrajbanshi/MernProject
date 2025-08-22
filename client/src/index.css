@@ -1447,6 +1447,115 @@ label {
 
 /***** Register Section Start *****/
 
+.section-ragis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .ragis-form {
+    background-color: var(--login-color);
+    max-width: 38rem;
+    height: auto;
+    padding: 4rem 2rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+
+    & .ragis-heading {
+      font-size: 4rem;
+      font-weight: lighter;
+      text-align: center;
+      text-transform: capitalize;
+      color: var(--white);
+    }
+
+    & .ragis-para {
+      font-size: 2.2rem;
+      margin-bottom: 1.8rem;
+      color: var(--white);
+      text-align: center;
+
+      &.navigate {
+        font-size: 1.7rem;
+        font-weight: 500;
+        padding-right: 2rem;
+
+        & span {
+          color: var(--white);
+          padding-left: 1rem;
+          transition: all 0.3s linear;
+          -webkit-transition: all 0.3s linear;
+          -moz-transition: all 0.3s linear;
+          -ms-transition: all 0.3s linear;
+          -o-transition: all 0.3s linear;
+        }
+
+        & span:hover {
+          color: var(--helper);
+        }
+      }
+    }
+
+    & .form-submit-input {
+      display: flex;
+      flex-direction: column;
+
+      & .ragis-input {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+        border: 1.5px solid rgba(255, 255, 255, 0.3);
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+
+        & ion-icon {
+          position: absolute;
+          left: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          font-size: 2rem;
+          color: var(--white);
+        }
+
+        & .login-email,
+        .ragis-user,
+        .ragis-phone,
+        .login-password {
+          margin-left: 4.5rem;
+          width: 28rem;
+          border: none;
+          outline: none;
+          font-size: 1.5rem;
+          color: var(--white);
+          background-color: var(--login-color);
+        }
+
+        & .login-email::placeholder,
+        .ragis-user::placeholder,
+        .ragis-phone::placeholder,
+        .login-password::placeholder {
+          /* margin-right: 1rem; */
+          color: var(--white);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
 /***** Ragister Section End *****/
 
 /***** Login Section Starts *****/

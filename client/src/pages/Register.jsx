@@ -73,12 +73,12 @@ export const Register = () => {
         <>
         <section>
             <main>
-                <div className="section section-registration">
+                <div className="section section-ragis">
                     <div className="container grid">
                         {/* let's tackle registration form  */}
-                        <div className="registration-form">
-                            <h1 className="registration-heading mb-3">Create Account</h1>
-                            <p className="registration-para">Sign up to get started</p>
+                        <div className="ragis-form">
+                            <h1 className="ragis-heading mb-3">Create Account</h1>
+                            <p className="ragis-para">Sign up to get started</p>
                             <br />
 
                             <form onSubmit={handleSubmit} className="form-submit-input">
@@ -118,7 +118,7 @@ export const Register = () => {
                                     <input 
                                     type="number" 
                                     name="phone" 
-                                    className="ragis-user"
+                                    className="ragis-phone"
                                     placeholder="Phone"
                                     id="phone"
                                     required
