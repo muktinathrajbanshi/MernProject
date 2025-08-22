@@ -458,15 +458,16 @@ label {
 /* Features Section */
 .about-features {
   /* background: #f9fafb; */
+  margin-top: 5rem;
   padding: 5rem 2rem;
 }
 
 .features-container {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 120rem;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5rem;
+  gap: 9rem;
 }
 
 .feature-card {
@@ -525,24 +526,6 @@ label {
   /* color: #0072ff; */
   margin-top: 2rem;
   margin-bottom: 1rem;
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-  .about-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .features-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .features-container {
-    grid-template-columns: 1fr;
-  }
 }
 
 /***** About Us Section Ends *****/
@@ -1781,6 +1764,13 @@ body tr {
     gap: 3rem;
   }
 
+  /* about us section  */
+  .features-container {
+    max-width: 110rem;
+    padding: 0 6.2rem;
+    gap: 4.8rem;
+  }
+
   /* resume section  */
   .section-resume .resume-data-subsection .grid-two-column {
     grid-template-columns: 1fr 1fr;
@@ -1965,6 +1955,15 @@ body tr {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* about us section  */
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-about .features-container {
+    gap: 6rem;
+  }
+
   /* swiper section  */
   .swiper-client-msg .swiper-icon-fix::after {
     transform: translateY(165%);
@@ -2035,6 +2034,14 @@ body tr {
   /* about section  */
   .section-about .grid-two-column {
     grid-template-columns: 1fr;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+
+  .features-container {
+    max-width: 60rem;
   }
 
   .section-about-data {
