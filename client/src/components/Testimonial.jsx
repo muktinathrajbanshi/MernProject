@@ -26,7 +26,7 @@ export function Testimonial() {
         <SwiperSlide>
           <div className="swiper-client-msg">
             <p>
-              "I’m extremely impressed with the website they built for my
+               "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
                 communication."
@@ -47,7 +47,7 @@ export function Testimonial() {
         <SwiperSlide>
           <div className="swiper-client-msg">
             <p>
-             "I’m extremely impressed with the website they built for my
+              "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
                 communication."
@@ -89,7 +89,7 @@ export function Testimonial() {
         <SwiperSlide>
           <div className="swiper-client-msg">
               <p>
-                "I’m extremely impressed with the website they built for my
+                 "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
                 communication."
@@ -131,7 +131,7 @@ export function Testimonial() {
         <SwiperSlide>
             <div className="swiper-client-msg">
               <p>
-                "I’m extremely impressed with the website they built for my
+                 "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
                 communication."
@@ -192,7 +192,7 @@ export function Testimonial() {
 
         {/* Slide 8 */}
         <SwiperSlide>
-                        <div className="swiper-client-msg">
+            <div className="swiper-client-msg">
               <p>
                 "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
@@ -210,7 +210,7 @@ export function Testimonial() {
               </div>
             </div>
         </SwiperSlide>
-
+        
       </Swiper>
     </section>
   );
