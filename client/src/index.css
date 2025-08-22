@@ -1235,6 +1235,56 @@ label {
   color: #ced3ff;
 }
 
+.swiper-client-msg .swiper-icon-fix {
+  color: var(--para);
+  line-height: 1.6;
+  font-size: 1.7rem;
+  position: relative;
+  /* padding: 3rem 4rem; */
+}
+
+.swiper-client-msg .swiper-icon-fix::before {
+  content: "\f10d";
+  position: absolute;
+  top: 50%;
+  left: -6rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 5rem;
+  color: #ced3ff;
+  transform: translateY(-130%);
+  -webkit-transform: translateY(-130%);
+  -moz-transform: translateY(-130%);
+  -ms-transform: translateY(-130%);
+  -o-transform: translateY(-130%);
+}
+
+.swiper-client-msg .swiper-icon-fix::after {
+  content: "\f10e";
+  position: absolute;
+  bottom: 50%;
+  right: -4rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 5rem;
+  color: #ced3ff;
+  transform: translateY(110%);
+  -webkit-transform: translateY(110%);
+  -moz-transform: translateY(110%);
+  -ms-transform: translateY(110%);
+  -o-transform: translateY(110%);
+}
+
+.swiper-client-msg .swiper-icon-fix {
+  display: inline-block; /* allows transform only on text */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.swiper-client-msg .swiper-icon-fix:hover {
+  color: var(--white);
+  transform: translateX(0.8rem);
+}
+
 .swiper-client-data {
   align-items: center;
   margin-top: 3.2rem;

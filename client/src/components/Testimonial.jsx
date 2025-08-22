@@ -25,7 +25,7 @@ export function Testimonial() {
         {/* Slide 1 */}
         <SwiperSlide>
           <div className="swiper-client-msg">
-            <p>
+            <p className="swiper-icon-fix">
                "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
@@ -46,7 +46,7 @@ export function Testimonial() {
         {/* Slide 2 */}
         <SwiperSlide>
           <div className="swiper-client-msg">
-            <p>
+            <p className="swiper-icon-fix">
               "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
@@ -67,7 +67,7 @@ export function Testimonial() {
         {/* Slide 3 */}
         <SwiperSlide>
           <div className="swiper-client-msg">
-              <p>
+              <p className="swiper-icon-fix">
                 "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
@@ -88,7 +88,7 @@ export function Testimonial() {
         {/* Slide 4 */}
         <SwiperSlide>
           <div className="swiper-client-msg">
-              <p>
+              <p className="swiper-icon-fix">
                  "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
@@ -109,7 +109,7 @@ export function Testimonial() {
         {/* Slide 5 */}
         <SwiperSlide>
             <div className="swiper-client-msg">
-              <p>
+              <p className="swiper-icon-fix">
                 "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
@@ -130,7 +130,7 @@ export function Testimonial() {
         {/* Slide 6 */}
         <SwiperSlide>
             <div className="swiper-client-msg">
-              <p>
+              <p className="swiper-icon-fix">
                  "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
@@ -151,7 +151,7 @@ export function Testimonial() {
         {/* Slide 6 */}
         <SwiperSlide>
             <div className="swiper-client-msg">
-              <p>
+              <p className="swiper-icon-fix">
                 "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
@@ -172,7 +172,7 @@ export function Testimonial() {
         {/* Slide 7 */}
         <SwiperSlide>
             <div className="swiper-client-msg">
-              <p>
+              <p className="swiper-icon-fix">
                 "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
@@ -193,7 +193,7 @@ export function Testimonial() {
         {/* Slide 8 */}
         <SwiperSlide>
             <div className="swiper-client-msg">
-              <p>
+              <p className="swiper-icon-fix">
                 "I’m extremely impressed with the website they built for my
                 company. It’s clean, functional, and user-friendly. Their team
                 delivered exactly what we needed—on time and with great
