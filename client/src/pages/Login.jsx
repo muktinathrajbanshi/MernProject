@@ -71,7 +71,7 @@ export const Login = () => {
         <>
             <StarsBackground />
             <section className="section section-login">
-                    <div className="container grid grid-two-cols">
+                    <div className="container grid">
                         {/* let's tackle login form  */}
                         <div className="login-form">
                             <h1 className="login-heading mb-3">Welcome Back</h1>
