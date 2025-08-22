@@ -25,7 +25,7 @@ export const Home = () => {
               innovative, tailor-made IT solutions to help you stay ahead in the digital era.
             </p>
             <div>
-              <NavLink to="/contact"><button className="btn hireme-btn">connect now</button></NavLink>
+              <NavLink to="/contact"><button className="btn">connect now</button></NavLink>
             </div>
           </div>
           {/* hero section right side  */}

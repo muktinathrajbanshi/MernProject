@@ -10,23 +10,25 @@ export const About = () => {
     <main>
       
        {/* Hero Section */}
-        <section className="section about-hero">
-          <div className="container grid-two-column">
+        <section className="section-about section">
+          <div className="container grid grid-two-column">
             
             {/* Left Content */}
-            <div className="about-content">
+            <div className="section-about-data">
               <p className="welcome-text">
                 Welcome {user ? ` ${user.username},` : ""} to our website
               </p>
               <h1>
                 Why Choose Us?
               </h1>
-              <p className="hero-description">
+              <p className="hero-para">
                We’re more than just an IT company—we’re your trusted growth partner. With innovation, reliability, and a people-first approach, we deliver technology solutions that drive real business impact.
               </p>
+              <div>
               <NavLink to="/contact">
                 <button className="btn">Connect Now</button>
               </NavLink>
+              </div>
             </div>
 
             {/* Right Image */}

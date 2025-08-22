@@ -401,7 +401,7 @@ label {
 
 /***** About Us Section Starts *****/
 
-.about-hero {
+.section-about {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -418,10 +418,6 @@ label {
   overflow: hidden;
 }
 
-.hero-description {
-  margin-bottom: 5rem;
-}
-
 .container.grid-two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -431,11 +427,11 @@ label {
   margin: auto;
 }
 
-.about-content {
+.section-about-data {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  gap: 1.6rem;
-  z-index: 2;
+  align-items: flex-start;
 }
 
 .about-content-userdata {
@@ -445,10 +441,11 @@ label {
   text-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
 }
 
-.about-content h1 {
+.section-about-data h1 {
   font-size: 6rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  line-height: 8rem;
+  margin-bottom: -2rem;
   background: linear-gradient(90deg, #00d4ff, #7d5fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
