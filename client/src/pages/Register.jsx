@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 
@@ -78,15 +78,18 @@ export const Register = () => {
                         {/* let's tackle registration form  */}
                         <div className="registration-form">
                             <h1 className="registration-heading mb-3">Create Account</h1>
+                            <p className="registration-para">Sign up to get started</p>
                             <br />
 
-                            <form onSubmit={handleSubmit}>
-                                <div>
-                                    <label htmlFor="username">username</label>
+                            <form onSubmit={handleSubmit} className="form-submit-input">
+                                <div className="regis-input">
+                                    <label htmlFor="username" />
+                                    <ion-icon name="person-outline"></ion-icon>
                                     <input 
                                     type="text" 
                                     name="username" 
-                                    placeholder="username"
+                                    className="ragis-user"
+                                    placeholder="Username"
                                     id="username"
                                     required
                                     autoComplete="off"
@@ -94,12 +97,14 @@ export const Register = () => {
                                     onChange={handleInput}
                                     />
                                 </div>
-                                <div>
-                                    <label htmlFor="email">email</label>
+                                <div className="ragis-input">
+                                    <label htmlFor="email" />
+                                    <ion-icon name="mail-outline" />
                                     <input 
                                     type="email" 
                                     name="email" 
-                                    placeholder="enter your email"
+                                    className="login-email"
+                                    placeholder="Email"
                                     id="email"
                                     required
                                     autoComplete="off"
@@ -107,12 +112,14 @@ export const Register = () => {
                                     onChange={handleInput}
                                     />
                                 </div>
-                                <div>
-                                    <label htmlFor="phone">phone</label>
+                                <div className="ragis-input">
+                                    <label htmlFor="phone" />
+                                    <ion-icon name="call-outline"></ion-icon>
                                     <input 
                                     type="number" 
                                     name="phone" 
-                                    placeholder="phone"
+                                    className="ragis-user"
+                                    placeholder="Phone"
                                     id="phone"
                                     required
                                     autoComplete="off"
@@ -120,11 +127,13 @@ export const Register = () => {
                                     onChange={handleInput}
                                     />
                                 </div>
-                                 <div>
-                                    <label htmlFor="password">password</label>
+                                 <div className="ragis-input">
+                                    <label htmlFor="password" />
+                                    <ion-icon name="lock-closed-outline" />
                                     <input 
                                     type="text" 
                                     name="password" 
+                                    className="login-password"
                                     placeholder="password"
                                     id="password"
                                     required
@@ -134,7 +143,9 @@ export const Register = () => {
                                     />
                                 </div>
                                 <br />
-                                <button type="submit" className="btn btn-submit">Register Now</button>
+                                <button type="submit" className="btn btn-submit">Sign Up</button>
+                                <br />
+                                 <p className="ragis-para navigate">Already have an account?<NavLink to="/login"><span>Sign In</span></NavLink></p>
                             </form>
                         </div>
                     </div>
