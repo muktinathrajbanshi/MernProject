@@ -79,19 +79,19 @@ export const Home = () => {
             <div className="bio-stats">
               <h3>CSS</h3>
               <div className="bio-progress-bar bio-progress-3">
-                <span>80%</span>
+                <span>90%</span>
               </div>
             </div>
             <div className="bio-stats">
               <h3>JavaScript</h3>
               <div className="bio-progress-bar bio-progress-4">
-                <span>60%</span>
+                <span>85%</span>
               </div>
             </div>
             <div className="bio-stats">
               <h3>MERN</h3>
               <div className="bio-progress-bar bio-progress-5">
-                <span>80%</span>
+                <span>70%</span>
               </div>
             </div>
           </div>
