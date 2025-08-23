@@ -23,7 +23,7 @@ createRoot(document.getElementById('root')).render(
         pauseOnHover
         theme="colored"
         transition={Bounce}
-        // bodyClassName="toastBody"
+        bodyClassName="toastBody"
         />
     </StrictMode>
   </AuthProvider>

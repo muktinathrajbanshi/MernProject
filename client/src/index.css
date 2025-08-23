@@ -96,7 +96,7 @@ p {
 
 p:hover {
   color: var(--para-light);
-  /* text-shadow: 0 0 10px #00ffff, 0 0 20px #1abc9c; */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #1abc9c;
   transform: translateX(0.8rem);
   -webkit-transform: translateX(0.8rem);
   -moz-transform: translateX(0.8rem);
@@ -399,6 +399,30 @@ label {
 }
 
 /***** Hero Section Ends *****/
+
+/***** Toastify Section Starts *****/
+
+/* .Toastify__toast-container--top-right {
+  top: 15rem !important;
+  right: 2rem;
+} */
+
+/* .Toastify__toast-container--bottom-right {
+  bottom: 15rem !important;
+  right: 2rem;
+} */
+
+/* .Toastify__toast {
+  max-width: 24rem !important;
+  margin: 0 auto !important;
+} */
+
+.toastBody {
+  font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+}
+
+/***** Toastify Section Ends *****/
 
 /***** About Us Section Starts *****/
 
@@ -992,11 +1016,10 @@ label {
   -o-transform: scale(0.9);
 }
 
-.f-credits p {
+.f-credits {
   text-align: center;
   /* color: #adadad; */
   /* remove when not added star animation  */
-  color: #ccc;
 }
 
 .footer a:hover,
@@ -1331,7 +1354,7 @@ label {
 .section-contact-main input,
 .section-contact-main textarea {
   padding: 1.2rem 2rem;
-  border: 0.1rem solid #c9c9c9;
+  border: 0.1rem solid var(--para);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1342,7 +1365,7 @@ label {
   width: 100%;
   /* remove below 2 if not star animation  */
   background: transparent;
-  color: var(--white);
+  color: var(--para-light);
 }
 
 .section-contact-main button[type="submit"] {
@@ -2005,6 +2028,17 @@ body tr {
     display: block;
   }
 
+  /* react toastify  */
+  /* .Toastify__toast {
+    max-width: 30rem !important;
+    margin: 0 auto !important;
+    left: 4.5rem;
+  } */
+
+  .toastBody {
+    font-size: 1.9rem;
+  }
+
   /* hero section  */
   .section-hero h1 {
     line-height: 0.5;
@@ -2054,6 +2088,12 @@ body tr {
     -moz-transform: translateY(165%);
     -ms-transform: translateY(165%);
     -o-transform: translateY(165%);
+  }
+
+  /* react toastify  */
+
+  .toastBody {
+    font-size: 2rem;
   }
 
   /* footer section  */
