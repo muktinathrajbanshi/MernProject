@@ -433,7 +433,8 @@ label {
 .section-about-data p {
   font-size: 1.7rem;
   line-height: 1.6;
-  color: #ddd;
+  /* color: #ddd; */
+  color: var(--para);
   transition: transform 0.3s ease, color 0.3s ease;
   -webkit-transition: transform 0.3s ease, color 0.3s ease;
   -moz-transition: transform 0.3s ease, color 0.3s ease;
@@ -443,7 +444,7 @@ label {
 
 .section-about-data p:hover {
   transform: translateX(0.8rem);
-  color: #fff;
+  color: var(--para-light);
   -webkit-transform: translateX(0.8rem);
   -moz-transform: translateX(0.8rem);
   -ms-transform: translateX(0.8rem);
@@ -678,11 +679,16 @@ label {
 
 .counter-numbers {
   font-size: 3.8rem;
+  color: var(--para-light);
 }
 
 .section-work-data p {
-  color: var(--white);
+  color: var(--para);
   text-transform: capitalize;
+}
+
+.section-work-data p:hover {
+  color: var(--para-light);
 }
 
 /***** Work Data/Counter Section End *****/
@@ -941,7 +947,7 @@ label {
   font-size: 1.8rem;
   /* color: #adadad;  */
   /* remove below one when star animation not added */
-  color: #ccc;
+  color: var(--para);
   text-transform: capitalize;
 }
 
@@ -956,7 +962,7 @@ label {
   font-style: normal;
   /* color: #adadad;  */
   /* remove below one when not added star animation  */
-  color: #ccc;
+  color: var(--para);
 }
 
 .f-social-icons {
@@ -995,7 +1001,7 @@ label {
 
 .footer a:hover,
 .footer a:active {
-  color: var(--white);
+  color: var(--para-light);
 }
 
 /***** Footer End Section *****/
@@ -2238,6 +2244,10 @@ body tr {
 
   .counter-numbers {
     font-size: 3.2rem;
+  }
+
+  .counter-numbers {
+    color: var(--para);
   }
 
   /* resume section  */

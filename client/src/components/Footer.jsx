@@ -22,7 +22,7 @@ export const Footer = () => {
             </li>
             <li>
               <span><ion-icon name="arrow-forward-outline" /></span>
-              <a href="./about.html">about</a>
+              <NavLink to="/about">about</NavLink>
             </li>
             <li>
               <span><ion-icon name="arrow-forward-outline" /></span>
