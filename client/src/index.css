@@ -30,8 +30,8 @@
 
 :root {
   --heading: rgb(0 10 45);
-  /* --para: #777; */
-  --para: #ddd;
+  --para: #aeefff;
+  --para-light: #00ffff;
   --para-tint: #e4e4e4;
   --login-color: #535c68;
   --white: #fff;
@@ -95,7 +95,8 @@ p {
 }
 
 p:hover {
-  color: var(--white);
+  color: var(--para-light);
+  /* text-shadow: 0 0 10px #00ffff, 0 0 20px #1abc9c; */
   transform: translateX(0.8rem);
   -webkit-transform: translateX(0.8rem);
   -moz-transform: translateX(0.8rem);
@@ -1229,7 +1230,7 @@ label {
 }
 
 .swiper-client-msg .swiper-icon-fix:hover {
-  color: var(--white);
+  color: var(--para-light);
   transform: translateX(0.8rem);
 }
 
