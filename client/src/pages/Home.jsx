@@ -16,7 +16,7 @@ export const Home = () => {
         <div className="container grid grid-two-column">
           <div className="section-hero-data">
           <div className="about-content">
-            <h4 className="hero-top-data"><span>welcomt to</span></h4>
+            <h4 className="hero-top-data"><span>welcome to</span></h4>
           </div>
             <div className="hero-heading">muktinath tech</div>
             <p className="hero-para">
