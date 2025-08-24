@@ -30,7 +30,6 @@ export const Service = () => {
                                         <p>{description}</p>
                                         <div className=" grid-two-column">
                                             <p>{provider}</p>
-                                            <p>{price}</p>
                                         </div>
                                     </div>
                             </div>
