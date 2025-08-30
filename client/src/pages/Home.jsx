@@ -146,7 +146,7 @@ export const Home = () => {
               </div>
                <div className="resume-data-right">
                 <p className="resume-data-button">Fulltime</p>
-                 <span><ion-icon name="calendar-outline" /> November 2023 - Feb 2025</span>
+                 <span><ion-icon name="calendar-outline" /> November 2023 - Feb 2024</span>
               </div> 
             </div>
 
