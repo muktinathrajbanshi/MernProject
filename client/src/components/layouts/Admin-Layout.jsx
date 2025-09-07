@@ -21,10 +21,10 @@ export const AdminLayout = () => {
                 <section className="container">
                     <nav className="admin-section">
                         <ul>
-                            <li><NavLink to="/admin/users"><FaUser /> users </NavLink></li>
-                            <li><NavLink to="/admin/contacts"><FaMessage /> contacts </NavLink></li>
-                            <li><NavLink to="/admin/contacts"><FaRegListAlt /> services </NavLink></li>
-                            <li><NavLink to="/admin/contacts"><FaHome /> home </NavLink></li>
+                            <li><NavLink to="/admin/users"><span className="admin-link"><FaUser /></span> users </NavLink></li>
+                            <li><NavLink to="/admin/contacts"><span className="admin-link"><FaMessage /></span> contacts </NavLink></li>
+                            <li><NavLink to="/admin/contacts"><span className="admin-link"><FaRegListAlt /></span> services </NavLink></li>
+                            <li><NavLink to="/admin/contacts"><span className="admin-link"><FaHome /></span> home </NavLink></li>
                         </ul>
                     </nav>
                 </section>

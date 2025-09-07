@@ -1872,6 +1872,10 @@ body tr {
   color: var(--para);
 }
 
+.admin-section .admin-link {
+  padding-right: 0.5rem;
+}
+
 .admin-section a:hover {
   color: var(--para-light);
   transition: all 0.3s ease;
