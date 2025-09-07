@@ -1868,6 +1868,19 @@ body tr {
   padding: 1.5rem 0;
 }
 
+.container .admin-section a {
+  color: var(--para);
+}
+
+.admin-section a:hover {
+  color: var(--para-light);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
 /* Media Query Section Starts  */
 
 /* for 1200px  */
