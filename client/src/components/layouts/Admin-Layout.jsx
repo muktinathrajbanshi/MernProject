@@ -18,8 +18,8 @@ export const AdminLayout = () => {
     return (
         <>
             <header>
-                <div className="container">
-                    <nav>
+                <section className="container">
+                    <nav className="admin-section">
                         <ul>
                             <li><NavLink to="/admin/users"><FaUser /> users </NavLink></li>
                             <li><NavLink to="/admin/contacts"><FaMessage /> contacts </NavLink></li>
@@ -27,7 +27,7 @@ export const AdminLayout = () => {
                             <li><NavLink to="/admin/contacts"><FaHome /> home </NavLink></li>
                         </ul>
                     </nav>
-                </div>
+                </section>
             </header>
             <Outlet />
         </>

@@ -1854,6 +1854,22 @@ body tr {
   -o-transform: scale(0.7);
 }
 
+/* My Admin Panel Section Starts  */
+
+.container .admin-section {
+  font-size: 2rem;
+  /* background-color: #fff; */
+}
+
+.container li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+/* Media Query Section Starts  */
+
 /* for 1200px  */
 @media (max-width: 1200px) {
   html {
