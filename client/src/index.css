@@ -1711,9 +1711,13 @@ label {
   color: var(--para);
 }
 
+thead tr th {
+  color: var(--white);
+}
+
 thead,
 tbody {
-  background-color: var(--para);
+  background-color: transparent;
 }
 
 /***** Admin Users Section Ends *****/
@@ -1739,12 +1743,46 @@ td {
   letter-spacing: 0.1rem;
   padding: 3rem;
   text-align: center;
-  color: #000;
+  color: var(--para);
   width: 30rem;
 }
 
+td a {
+  color: var(--para);
+  border: 1px solid var(--para);
+  padding: 0.7rem 3rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+td button {
+  background-color: transparent;
+  color: var(--para);
+  border: 1px solid var(--para);
+  padding: 0.7rem 3rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+td:hover {
+  color: var(--para-light);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 table {
-  background: #ecf0f1;
+  /* background: #ecf0f1; */
   box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
   border-collapse: collapse;
   border-radius: 1rem;
