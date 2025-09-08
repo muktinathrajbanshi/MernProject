@@ -1705,6 +1705,19 @@ label {
   }
 }
 
+/***** Admin Users Section Starts *****/
+
+.admin-users-section .container h1 {
+  color: var(--para);
+}
+
+thead,
+tbody {
+  background-color: var(--para);
+}
+
+/***** Admin Users Section Ends *****/
+
 /***** Login Section End *****/
 
 thead {
