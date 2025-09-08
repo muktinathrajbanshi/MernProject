@@ -1758,6 +1758,16 @@ td a {
   -o-border-radius: 0.5rem;
 }
 
+td a:hover {
+  background: var(--gradientSupport);
+  color: var(--white);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
 td button {
   background-color: transparent;
   color: var(--para);
@@ -1769,6 +1779,16 @@ td button {
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
+}
+
+td button:hover {
+  background: var(--gradientSupport);
+  color: red;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 td:hover {
