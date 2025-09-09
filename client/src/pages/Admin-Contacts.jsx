@@ -66,10 +66,16 @@ export const AdminContacts = () => {
                         const { username, email, message, _id} = curContactData;
                         return (
                             <div key={index} className="container">
-                                <p>{username}</p>
-                                <p>{email}</p>
-                                <p>{message}</p>
-                                <button className="btn" onClick={() => deleteContactById(_id)}>delete</button>
+                            <table>
+                            <thead>
+                                <tr>
+                                    <td>{username}</td>
+                                    <td>{email}</td>
+                                    <td>{message}</td>
+                                    <td><button onClick={() => deleteContactById(_id)}>delete</button></td>
+                                </tr>
+                            </thead>
+                            </table>
                             </div>
                         );
                     })
