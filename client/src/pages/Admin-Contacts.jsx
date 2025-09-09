@@ -56,14 +56,16 @@ export const AdminContacts = () => {
     return (
         <>
            <section className="admin-contacts-section">
-            <h1>Admin Contact Data</h1>
+           <div className="container">
+              <h1>Admin Contact Data</h1>
+           </div>
 
             <div className="container admin-users">
                 {
                     contactData.map((curContactData, index) => {
                         const { username, email, message, _id} = curContactData;
                         return (
-                            <div key={index}>
+                            <div key={index} className="container">
                                 <p>{username}</p>
                                 <p>{email}</p>
                                 <p>{message}</p>

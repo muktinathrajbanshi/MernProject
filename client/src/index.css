@@ -1722,6 +1722,14 @@ tbody {
 
 /***** Admin Users Section Ends *****/
 
+/***** Admin Contact Section Starts *****/
+
+.admin-contacts-section h1 {
+  color: var(--para);
+}
+
+/***** Admin Contact Section Ends *****/
+
 /***** Login Section End *****/
 
 thead {
