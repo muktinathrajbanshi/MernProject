@@ -254,6 +254,10 @@ label {
   -o-transition: color 0.3s linear;
 }
 
+.navbar-lists .active {
+  color: var(--helper);
+}
+
 .navbar-link:hover,
 .navbar-link:active {
   color: var(--helper);
@@ -1723,16 +1727,6 @@ tbody {
 /***** Admin Users Section Ends *****/
 
 /***** Admin Contact Section Starts *****/
-
-/* .admin-users-section tr {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(10rem, 1fr));
-  align-items: center;
-  box-shadow: 0 0.3rem 0 grey;
-  margin-bottom: 10px;
-  border-bottom: 4px solid transparent;
-  color: red;
-} */
 
 .admin-contacts-section h1 {
   color: var(--para);
