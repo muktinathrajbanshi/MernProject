@@ -8,6 +8,7 @@ export const Navbar = () => {
 
   const location = useLocation();
 
+  // Close mobile menu when route changes
   useEffect(() => {
     setMenuActive(false);
   }, [location.pathname]);
@@ -18,12 +19,10 @@ export const Navbar = () => {
 
   return (
     <header className={`header ${menuActive ? "active" : ""}`}>
-      {/* Logo */}
       <NavLink to="/">
         <img src="/images/mylogo.avif" alt="my logo img" className="logo" />
       </NavLink>
 
-      {/* Navbar Links */}
       <nav className="navbar">
         <ul className="navbar-lists">
           <li>
@@ -78,42 +77,37 @@ export const Navbar = () => {
             </NavLink>
           </li>
 
-          {/* Auth Links */}
-          {isLoggedIn ? (
-            <li>
-              <NavLink
-                to="/logout"
-                className={({ isActive }) =>
-                  `navbar-link logout-link ${isActive ? "active" : ""}`
-                }
-              >
-                Logout
-              </NavLink>
-            </li>
-          ) : (
-            <>
-              <li>
-                <NavLink
-                  to="/register"
-                  className={({ isActive }) =>
-                    `navbar-link register-link ${isActive ? "active" : ""}`
-                  }
-                >
-                  Register
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/login"
-                  className={({ isActive }) =>
-                    `navbar-link login-link ${isActive ? "active" : ""}`
-                  }
-                >
-                  Login
-                </NavLink>
-              </li>
-            </>
-          )}
+          {/* Auth Links: always mounted, just hide visually if needed */}
+          <li style={{ display: isLoggedIn ? "none" : "inline-block" }}>
+            <NavLink
+              to="/register"
+              className={({ isActive }) =>
+                `navbar-link register-link ${isActive ? "active" : ""}`
+              }
+            >
+              Register
+            </NavLink>
+          </li>
+          <li style={{ display: isLoggedIn ? "none" : "inline-block" }}>
+            <NavLink
+              to="/login"
+              className={({ isActive }) =>
+                `navbar-link login-link ${isActive ? "active" : ""}`
+              }
+            >
+              Login
+            </NavLink>
+          </li>
+          <li style={{ display: isLoggedIn ? "inline-block" : "none" }}>
+            <NavLink
+              to="/logout"
+              className={({ isActive }) =>
+                `navbar-link logout-link ${isActive ? "active" : ""}`
+              }
+            >
+              Logout
+            </NavLink>
+          </li>
         </ul>
       </nav>
 
