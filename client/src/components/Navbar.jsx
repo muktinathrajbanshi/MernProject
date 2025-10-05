@@ -1,10 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useAuth } from "../store/auth";
 import { useState } from "react";
 
 export const Navbar = () => {
   const { isLoggedIn } = useAuth();
   const [menuActive, setMenuActive] = useState(false);
+  
+  const location = useLocation();
+  console.log(location);
+  
 
   const toggleMenu = () => {
     setMenuActive((prev) => !prev);
