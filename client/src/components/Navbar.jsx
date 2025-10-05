@@ -62,7 +62,7 @@ export const Navbar = () => {
           <li>
             <NavLink
               to="/contact"
-              className={({ isActive }) => `navbar-link contact-"link ${isActive ? "active" : ""}`}
+              className={({ isActive }) => `navbar-link contact-link ${isActive ? "active" : ""}`}
               onClick={() => setMenuActive(false)}
             >
               Contact
