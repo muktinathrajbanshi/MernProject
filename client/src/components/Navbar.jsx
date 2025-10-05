@@ -1,14 +1,16 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useAuth } from "../store/auth";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const Navbar = () => {
   const { isLoggedIn } = useAuth();
   const [menuActive, setMenuActive] = useState(false);
-  
+
   const location = useLocation();
-  console.log(location);
-  
+
+  useEffect(() => {
+    setMenuActive(false);
+  }, [location.pathname]);
 
   const toggleMenu = () => {
     setMenuActive((prev) => !prev);
@@ -16,20 +18,21 @@ export const Navbar = () => {
 
   return (
     <header className={`header ${menuActive ? "active" : ""}`}>
+      {/* Logo */}
       <NavLink to="/">
         <img src="/images/mylogo.avif" alt="my logo img" className="logo" />
       </NavLink>
 
+      {/* Navbar Links */}
       <nav className="navbar">
         <ul className="navbar-lists">
           <li>
             <NavLink
               to="/"
-              className={({ isActive }) => 
+              end
+              className={({ isActive }) =>
                 `navbar-link home-link ${isActive ? "active" : ""}`
               }
-              
-              onClick={() => setMenuActive(false)}
             >
               Home
             </NavLink>
@@ -37,10 +40,9 @@ export const Navbar = () => {
           <li>
             <NavLink
               to="/about"
-              className={({ isActive }) => 
-              `navbar-link about-link ${isActive ? "active" : ""}`
+              className={({ isActive }) =>
+                `navbar-link about-link ${isActive ? "active" : ""}`
               }
-              onClick={() => setMenuActive(false)}
             >
               About
             </NavLink>
@@ -48,8 +50,9 @@ export const Navbar = () => {
           <li>
             <NavLink
               to="/service"
-              className={({ isActive }) => `navbar-link service-link ${isActive ? "active" : ""}`}
-              onClick={() => setMenuActive(false)}
+              className={({ isActive }) =>
+                `navbar-link service-link ${isActive ? "active" : ""}`
+              }
             >
               Services
             </NavLink>
@@ -57,8 +60,9 @@ export const Navbar = () => {
           <li>
             <NavLink
               to="/portfolio"
-              className={({ isActive }) => `navbar-link portfolio-link ${isActive ? "active" : ""}`}
-              onClick={() => setMenuActive(false)}
+              className={({ isActive }) =>
+                `navbar-link portfolio-link ${isActive ? "active" : ""}`
+              }
             >
               Portfolio
             </NavLink>
@@ -66,18 +70,22 @@ export const Navbar = () => {
           <li>
             <NavLink
               to="/contact"
-              className={({ isActive }) => `navbar-link contact-link ${isActive ? "active" : ""}`}
-              onClick={() => setMenuActive(false)}
+              className={({ isActive }) =>
+                `navbar-link contact-link ${isActive ? "active" : ""}`
+              }
             >
               Contact
             </NavLink>
           </li>
+
+          {/* Auth Links */}
           {isLoggedIn ? (
             <li>
               <NavLink
                 to="/logout"
-                className={({ isActive }) => `navbar-link logout-link ${isActive ? "active" : ""}`}
-                onClick={() => setMenuActive(false)}
+                className={({ isActive }) =>
+                  `navbar-link logout-link ${isActive ? "active" : ""}`
+                }
               >
                 Logout
               </NavLink>
@@ -87,8 +95,9 @@ export const Navbar = () => {
               <li>
                 <NavLink
                   to="/register"
-                  className={({ isActive }) => `navbar-link register-link ${isActive}`}
-                  onClick={() => setMenuActive(false)}
+                  className={({ isActive }) =>
+                    `navbar-link register-link ${isActive ? "active" : ""}`
+                  }
                 >
                   Register
                 </NavLink>
@@ -96,8 +105,9 @@ export const Navbar = () => {
               <li>
                 <NavLink
                   to="/login"
-                  className={({ isActive }) => `navbar-link login-link ${isActive ? "active" : ""}`}
-                  onClick={() => setMenuActive(false)}
+                  className={({ isActive }) =>
+                    `navbar-link login-link ${isActive ? "active" : ""}`
+                  }
                 >
                   Login
                 </NavLink>
@@ -107,17 +117,16 @@ export const Navbar = () => {
         </ul>
       </nav>
 
-      {/* Mobile menu button */}
+      {/* Mobile Menu Button */}
       <div className="mobile-navbar-btn" onClick={toggleMenu}>
-           <ion-icon
-            name="menu-outline"
-            className={`mobile-nav-icon ${!menuActive ? "active" : ""}`}
-          />
-          <ion-icon
-            name="close-outline"
-            className={`mobile-nav-icon ${menuActive ? "active" : ""}`}
-          />
-
+        <ion-icon
+          name="menu-outline"
+          className={`mobile-nav-icon ${!menuActive ? "active" : ""}`}
+        />
+        <ion-icon
+          name="close-outline"
+          className={`mobile-nav-icon ${menuActive ? "active" : ""}`}
+        />
       </div>
     </header>
   );
