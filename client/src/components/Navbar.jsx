@@ -21,7 +21,10 @@ export const Navbar = () => {
           <li>
             <NavLink
               to="/"
-              className="navbar-link home-link"
+              className={({ isActive }) => 
+                `navbar-link home-link ${isActive ? "active" : ""}`
+              }
+              
               onClick={() => setMenuActive(false)}
             >
               Home
@@ -30,7 +33,9 @@ export const Navbar = () => {
           <li>
             <NavLink
               to="/about"
-              className="navbar-link about-link"
+              className={({ isActive }) => 
+              `navbar-link about-link ${isActive ? "active" : ""}`
+              }
               onClick={() => setMenuActive(false)}
             >
               About
