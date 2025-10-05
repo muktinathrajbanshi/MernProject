@@ -72,7 +72,7 @@ export const Navbar = () => {
             <li>
               <NavLink
                 to="/logout"
-                className="navbar-link logout-link"
+                className={(isActive) => `navbar-link logout-link ${isActive ? "active" : ""}`}
                 onClick={() => setMenuActive(false)}
               >
                 Logout
@@ -83,7 +83,7 @@ export const Navbar = () => {
               <li>
                 <NavLink
                   to="/register"
-                  className="navbar-link register-link"
+                  className={(isActive) => `navbar-link register-link ${isActive}`}
                   onClick={() => setMenuActive(false)}
                 >
                   Register
@@ -92,7 +92,7 @@ export const Navbar = () => {
               <li>
                 <NavLink
                   to="/login"
-                  className="navbar-link login-link"
+                  className={(isActive) => `navbar-link login-link ${isActive ? "active" : ""}`}
                   onClick={() => setMenuActive(false)}
                 >
                   Login
