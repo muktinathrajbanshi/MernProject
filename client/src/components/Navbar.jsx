@@ -1,17 +1,10 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useAuth } from "../store/auth";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export const Navbar = () => {
   const { isLoggedIn } = useAuth();
   const [menuActive, setMenuActive] = useState(false);
-
-  const location = useLocation();
-
-  // Close mobile menu when route changes
-  useEffect(() => {
-    setMenuActive(false);
-  }, [location.pathname]);
 
   const toggleMenu = () => {
     setMenuActive((prev) => !prev);
@@ -19,10 +12,12 @@ export const Navbar = () => {
 
   return (
     <header className={`header ${menuActive ? "active" : ""}`}>
+      {/* Logo */}
       <NavLink to="/">
         <img src="/images/mylogo.avif" alt="my logo img" className="logo" />
       </NavLink>
 
+      {/* Navbar Links */}
       <nav className="navbar">
         <ul className="navbar-lists">
           <li>
@@ -32,82 +27,100 @@ export const Navbar = () => {
               className={({ isActive }) =>
                 `navbar-link home-link ${isActive ? "active" : ""}`
               }
+              onClick={() => setMenuActive(false)}
             >
               Home
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/about"
               className={({ isActive }) =>
                 `navbar-link about-link ${isActive ? "active" : ""}`
               }
+              onClick={() => setMenuActive(false)}
             >
               About
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/service"
               className={({ isActive }) =>
                 `navbar-link service-link ${isActive ? "active" : ""}`
               }
+              onClick={() => setMenuActive(false)}
             >
               Services
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/portfolio"
               className={({ isActive }) =>
                 `navbar-link portfolio-link ${isActive ? "active" : ""}`
               }
+              onClick={() => setMenuActive(false)}
             >
               Portfolio
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/contact"
               className={({ isActive }) =>
                 `navbar-link contact-link ${isActive ? "active" : ""}`
               }
+              onClick={() => setMenuActive(false)}
             >
               Contact
             </NavLink>
           </li>
 
-          {/* Auth Links: always mounted, just hide visually if needed */}
-          <li style={{ display: isLoggedIn ? "none" : "inline-block" }}>
-            <NavLink
-              to="/register"
-              className={({ isActive }) =>
-                `navbar-link register-link ${isActive ? "active" : ""}`
-              }
-            >
-              Register
-            </NavLink>
-          </li>
-          <li style={{ display: isLoggedIn ? "none" : "inline-block" }}>
-            <NavLink
-              to="/login"
-              className={({ isActive }) =>
-                `navbar-link login-link ${isActive ? "active" : ""}`
-              }
-            >
-              Login
-            </NavLink>
-          </li>
-          <li style={{ display: isLoggedIn ? "inline-block" : "none" }}>
-            <NavLink
-              to="/logout"
-              className={({ isActive }) =>
-                `navbar-link logout-link ${isActive ? "active" : ""}`
-              }
-            >
-              Logout
-            </NavLink>
-          </li>
+          {/* Auth Links */}
+          {isLoggedIn ? (
+            <li>
+              <NavLink
+                to="/logout"
+                className={({ isActive }) =>
+                  `navbar-link logout-link ${isActive ? "active" : ""}`
+                }
+                onClick={() => setMenuActive(false)}
+              >
+                Logout
+              </NavLink>
+            </li>
+          ) : (
+            <>
+              <li>
+                <NavLink
+                  to="/register"
+                  className={({ isActive }) =>
+                    `navbar-link register-link ${isActive ? "active" : ""}`
+                  }
+                  onClick={() => setMenuActive(false)}
+                >
+                  Register
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/login"
+                  className={({ isActive }) =>
+                    `navbar-link login-link ${isActive ? "active" : ""}`
+                  }
+                  onClick={() => setMenuActive(false)}
+                >
+                  Login
+                </NavLink>
+              </li>
+            </>
+          )}
         </ul>
       </nav>
 
