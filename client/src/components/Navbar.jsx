@@ -44,7 +44,7 @@ export const Navbar = () => {
           <li>
             <NavLink
               to="/service"
-              className="navbar-link service-link"
+              className={(isActive) => `navbar-link service-link ${isActive ? "active" : ""}`}
               onClick={() => setMenuActive(false)}
             >
               Services
@@ -53,7 +53,7 @@ export const Navbar = () => {
           <li>
             <NavLink
               to="/portfolio"
-              className="navbar-link portfolio-link"
+              className={(isActive) => `navbar-link portfolio-link ${isActive ? "active" : ""}`}
               onClick={() => setMenuActive(false)}
             >
               Portfolio
@@ -62,7 +62,7 @@ export const Navbar = () => {
           <li>
             <NavLink
               to="/contact"
-              className="navbar-link contact-link"
+              className={(isActive) => `navbar-link contact-"link ${isActive ? "active" : ""}`}
               onClick={() => setMenuActive(false)}
             >
               Contact
